@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedAt": "2026-10-10T14:55:01.223118Z",
-  "title": "Design System: BuildBudget PH",
+  "title": "Design System: Budget Build",
   "extensions": {
     "colorMeta": {
       "paper": {
@@ -395,7 +395,7 @@
   ],
   "narrative": {
     "northStar": "Planning journal",
-    "overview": "BuildBudget PH makes early home planning feel welcoming and easy to understand. Warm paper, cocoa text, terracotta actions, and editorial headings give the tools the character of a personal build notebook. Readable fields and explained figures keep the experience practical.\n\nThe material language is restrained: clean rules, flat surfaces, and modestly rounded controls. The journal metaphor comes from typography and document-like grouping; artificial paper grain and notebook doodles are excluded by the approved direction. Preserve the name BuildBudget PH while continuing the clearly different identity selected to replace the former navy-and-amber look.\n\nThis Scan-mode record describes implemented CSS and components. The local Impeccable launcher was unavailable; review was manual, with no automatic design metrics or certification claims. The homepage's composition and image direction remain in [.impeccable/surfaces/home.md](.impeccable/surfaces/home.md).",
+    "overview": "Budget Build makes early home planning feel welcoming and easy to understand. Warm paper, cocoa text, terracotta actions, and editorial headings give the tools the character of a personal build notebook. Readable fields and explained figures keep the experience practical.\n\nThe material language is restrained: clean rules, flat surfaces, and modestly rounded controls. The journal metaphor comes from typography and document-like grouping; artificial paper grain and notebook doodles are excluded by the approved direction. Preserve the name Budget Build while continuing the clearly different identity selected to replace the former navy-and-amber look.\n\nThis Scan-mode record describes implemented CSS and components. The local Impeccable launcher was unavailable; review was manual, with no automatic design metrics or certification claims. The homepage's composition and image direction remain in [.impeccable/surfaces/home.md](.impeccable/surfaces/home.md).",
     "keyCharacteristics": [
       "Warm paper and cocoa foundations.",
       "Terracotta actions with quiet olive support.",

@@ -10,7 +10,7 @@ const currency = (value: number) => `PHP ${value.toLocaleString('en-PH', { minim
 const printable = (value: string) => value.replace(/×/g, 'x').replace(/m²/g, 'sq m').replace(/±/g, '+/-').replace(/[–—]/g, '-');
 
 async function createReport(project: SavedProject): Promise<Buffer> {
-  const document = new PDFDocument({ size: 'A4', margin: 48, info: { Title: `${project.name} - BuildBudget PH estimate`, Author: 'BuildBudget PH' } });
+  const document = new PDFDocument({ size: 'A4', margin: 48, info: { Title: `${project.name} - Budget Build estimate`, Author: 'Budget Build' } });
   const chunks: Buffer[] = [];
   const result = new Promise<Buffer>((resolve, reject) => {
     document.on('data', (chunk: Buffer) => chunks.push(chunk));
@@ -20,7 +20,7 @@ async function createReport(project: SavedProject): Promise<Buffer> {
   const estimate = project.estimate;
   const heading = (text: string) => document.moveDown(0.8).font('Helvetica-Bold').fontSize(13).fillColor('#101d32').text(text).moveDown(0.4);
   const line = (text: string) => document.font('Helvetica').fontSize(10).fillColor('#26332a').text(printable(text), { lineGap: 3 });
-  document.font('Helvetica-Bold').fontSize(24).fillColor('#101d32').text('BUILDBUDGET PH');
+  document.font('Helvetica-Bold').fontSize(24).fillColor('#101d32').text('BUDGET BUILD');
   document.font('Helvetica').fontSize(11).fillColor('#5f6c61').text('Preliminary residential planning estimate');
   document.moveDown(1);
   document.font('Helvetica-Bold').fontSize(19).fillColor('#26332a').text(printable(project.name));

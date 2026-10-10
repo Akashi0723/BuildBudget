@@ -1,0 +1,35 @@
+{
+  "method": "Runtime browser checks and manual visual inspection.",
+  "checks": [
+    {
+      "width": 1536,
+      "initials": 2,
+      "header": true,
+      "footer": true,
+      "account": true,
+      "title": "Budget Build — Plan smart. Build with confidence.",
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "initials": 2,
+      "header": true,
+      "footer": true,
+      "account": true,
+      "title": "Budget Build — Plan smart. Build with confidence.",
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "initials": 2,
+      "header": true,
+      "footer": true,
+      "account": true,
+      "title": "Budget Build — Plan smart. Build with confidence.",
+      "overflow": false,
+      "errors": []
+    }
+  ]
+}

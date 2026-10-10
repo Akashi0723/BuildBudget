@@ -1,4 +1,4 @@
-# BuildBudget PH
+# Budget Build
 
 <!-- impeccable:product-schema 1 -->
 
@@ -22,7 +22,7 @@ Rates are educational demonstration assumptions, not current market prices. Esti
 
 ## Brand Commitments
 
-Keep the name BuildBudget PH and the warm planning journal design. The user requested a new logo after finding that the restored navy-and-amber building badge did not fit the redesign. Use a terracotta BB monogram alongside the editorial wordmark, consistently across the header, footer, account dialog, and browser icon. Use plain, welcoming language and actionable controls. The exact visual system belongs in DESIGN.md.
+The public brand is Budget Build, with no PH suffix. The user requested that the two terracotta monogram Bs become the initials of Budget and Build, inserting “udget” and “uild” beside each B. Use those custom vector initials with cocoa Caslon lettering throughout the header, footer, and account dialog. Retain the compact BB monogram for the browser icon. Preserve the warm planning journal design and plain homeowner language.
 
 ## Evidence on Hand
 

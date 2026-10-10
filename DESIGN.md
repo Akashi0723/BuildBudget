@@ -1,5 +1,5 @@
 ---
-name: BuildBudget PH
+name: Budget Build
 description: Welcoming homeowner planning in a warm personal build notebook.
 colors:
   paper: "#f6f1e8"
@@ -135,15 +135,15 @@ components:
     padding: "12px"
 ---
 
-# Design System: BuildBudget PH
+# Design System: Budget Build
 
 ## Overview
 
 **Creative North Star: "Planning journal"**
 
-BuildBudget PH makes early home planning feel welcoming and easy to understand. Warm paper, cocoa text, terracotta actions, and editorial headings give the tools the character of a personal build notebook. Readable fields and explained figures keep the experience practical.
+Budget Build makes early home planning feel welcoming and easy to understand. Warm paper, cocoa text, terracotta actions, and editorial headings give the tools the character of a personal build notebook. Readable fields and explained figures keep the experience practical.
 
-The material language is restrained: clean rules, flat surfaces, and modestly rounded controls. The journal metaphor comes from typography and document-like grouping; artificial paper grain and notebook doodles are excluded by the approved direction. Preserve the name BuildBudget PH while continuing the clearly different identity selected to replace the former navy-and-amber look.
+The material language is restrained: clean rules, flat surfaces, and modestly rounded controls. The journal metaphor comes from typography and document-like grouping; artificial paper grain and notebook doodles are excluded by the approved direction. Preserve the name Budget Build while continuing the clearly different identity selected to replace the former navy-and-amber look.
 
 This Scan-mode record describes implemented CSS and components. The local Impeccable launcher was unavailable; review was manual, with no automatic design metrics or certification claims. The homepage's composition and image direction remain in [.impeccable/surfaces/home.md](.impeccable/surfaces/home.md).
 
@@ -155,7 +155,7 @@ This Scan-mode record describes implemented CSS and components. The local Impecc
 - Flat, ruled groups and tangible outlined fields.
 - Explained reference budgets and plain homeowner language.
 
-The brand mark is an authored terracotta **BB** monogram: two precise, open line forms with straight stems and rounded bowls, paired with the existing Caslon wordmark. It suggests measured architectural drafting without using a generic house icon or a contrasting badge. `public/brand-mark.svg` is shared through `BrandMark.tsx` by the header, footer, and account dialog; `src/app/icon.svg` uses the same geometry with a slightly stronger stroke for small browser tabs. Keep the mark unframed, unanimated, and in its original proportions. Its image is decorative beside the readable brand name. No external plugin generated or certified this asset; UI UX Designer was unavailable in this session.
+The wordmark reads **Budget Build**, without a PH suffix. Each word begins with the same oversized terracotta vector B from the BB monogram, followed by cocoa Caslon “udget” or “uild” on a shared baseline. `public/brand-initial.svg` is reused twice by `BrandMark.tsx` in the header, footer, and account dialog. The full BB mark in `public/brand-mark.svg` and `src/app/icon.svg` remains the compact icon. Keep the lettering unframed, unanimated, and proportional; the accessible wordmark name is “Budget Build”.
 
 ## Colors
 
