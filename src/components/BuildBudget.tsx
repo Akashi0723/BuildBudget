@@ -12,7 +12,7 @@ const viewPath: Record<string, string> = { home: '/', new: '/projects/new', resu
 const pathView = () => { const p = window.location.pathname; if (/^\/projects\/[^/]+$/.test(p) && p!=='/projects/new') return 'result'; if(['/dashboard','/reports','/sign-in','/sign-up'].includes(p)) return 'projects'; return Object.keys(viewPath).find(k => viewPath[k] === p) || p.replace(/^\//, '') || 'home'; };
 const finishNames = { basic: 'Basic', standard: 'Standard', premium: 'Premium' };
 const steps = ['Project details', 'Floor area', 'Specifications', 'Your budget', 'Review'];
-function Logo() { return <span className="brand"><span className="brand-symbol"><House size={28} strokeWidth={1.6} aria-hidden="true"/></span><span>BuildBudget PH</span></span>; }
+function Logo() { return <span className="brand"><span className="brand-symbol"><Building2 size={25} strokeWidth={1.8} aria-hidden="true"/></span><span>BuildBudget PH</span></span>; }
 
 export default function BuildBudget({initialView='home'}:{initialView?:string}) {
   const [view, setView] = useState<View>(initialView);

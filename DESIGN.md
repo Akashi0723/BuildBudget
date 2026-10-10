@@ -271,7 +271,7 @@ Home tool links combine a quiet olive line icon, bold title, explanatory copy, a
 
 ### Don't:
 
-- **Don't** restore the former navy-and-amber brand identity.
+- **Don't** restore the former navy-and-amber palette across the interface. The original navy-and-amber building logo is retained at the user's explicit request.
 - **Don't** add artificial paper grain or notebook doodles to express the journal metaphor.
 - **Don't** replace the observed flat material language with decorative shadows.
 - **Don't** use color alone to communicate selection, errors, or budget status.

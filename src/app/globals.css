@@ -120,8 +120,8 @@ main:focus { outline: none; }
 .nav-container::after { content: ''; position: absolute; bottom: 0; left: 50px; right: 50px; height: 1px; background: var(--border); }
 .logo-button { flex-shrink: 0; padding: 0; background: none; text-align: left; }
 .brand { display: inline-flex; align-items: center; gap: 14px; color: var(--ink); font-family: var(--display-font); font-size: 28px; font-weight: 700; line-height: 1.25; letter-spacing: -.025em; white-space: nowrap; }
-.brand-symbol { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 36px; color: var(--ink); }
-.brand-symbol svg { width: 32px; height: 32px; }
+.brand-symbol { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; width: 39px; height: 42px; border-radius: 8px; background: #101d32; color: #fbb848; }
+.brand-symbol svg { width: 25px; height: 25px; }
 .brand-ph { margin-left: 6px; font: inherit; color: inherit; }
 .brand small { display: none; }
 .brand-light { color: var(--ink); }
@@ -142,8 +142,8 @@ main:focus { outline: none; }
 .footer { max-width: 1536px; margin: auto; padding: 28px 50px 30px; background: var(--paper); color: var(--muted); }
 .footer-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 18px 32px; border-top: 1px solid var(--border); padding-top: 22px; font-size: 14px; }
 .footer .brand { gap: 8px; font-family: var(--body-font); font-size: 14px; font-weight: 400; letter-spacing: 0; }
-.footer .brand-symbol { width: 22px; height: 24px; }
-.footer .brand-symbol svg { width: 22px; height: 22px; }
+.footer .brand-symbol { width: 22px; height: 24px; border-radius: 5px; }
+.footer .brand-symbol svg { width: 16px; height: 16px; }
 .footer-links-flat { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 24px; }
 .footer-links-flat button, .footer-links-flat a { min-height: 44px; padding: 10px 0; background: none; color: var(--muted); font-size: 14px; }
 .footer-links-flat button:hover, .footer-links-flat a:hover { color: var(--terracotta); }
@@ -490,7 +490,7 @@ main:focus { outline: none; }
 .modal-actions { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 .auth-brand { display: flex; align-items: center; gap: 10px; margin: 24px 0 12px; }
 .auth-brand > span { color: var(--ink); font-family: var(--display-font); font-size: 22px; font-weight: 700; letter-spacing: -.025em; }
-.auth-brand .icon-box { background: none; color: var(--ink); }
+.auth-brand .icon-box { background: #101d32; color: #fbb848; }
 .auth-brand .muted { color: var(--ink); }
 .auth-tabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; margin: 24px 0; border-bottom: 1px solid var(--border); }
 .auth-tabs button { min-height: 48px; padding: 12px 8px; border-bottom: 2px solid transparent; background: none; color: var(--muted); font-size: 14px; font-weight: 700; }
@@ -672,7 +672,8 @@ main:focus { outline: none; }
   .nav-container { gap: 10px; padding-inline: 20px; }
   .nav-container::after { left: 20px; right: 20px; }
   .brand { gap: 9px; font-size: 20px; }
-  .brand-symbol, .brand-symbol svg { width: 26px; height: 28px; }
+  .brand-symbol { width: 30px; height: 33px; border-radius: 6px; }
+  .brand-symbol svg { width: 21px; height: 21px; }
   .nav-actions { gap: 8px; }
   .signin-btn { gap: 5px; font-size: 14px; }
   .signin-btn > svg { display: none; }

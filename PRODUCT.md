@@ -22,7 +22,7 @@ Rates are educational demonstration assumptions, not current market prices. Esti
 
 ## Brand Commitments
 
-Keep the name BuildBudget PH. The user requested a clearly different brand look, replacing the incumbent navy-and-amber identity. Use plain, welcoming language and actionable controls. The exact new visual system belongs in DESIGN.md after direction selection.
+Keep the name BuildBudget PH. The user requested a clearly different brand look, replacing the incumbent navy-and-amber identity, then explicitly requested restoring the original navy-and-amber building logo. Retain that logo within the warm planning journal design. Use plain, welcoming language and actionable controls. The exact new visual system belongs in DESIGN.md after direction selection.
 
 ## Evidence on Hand
 
