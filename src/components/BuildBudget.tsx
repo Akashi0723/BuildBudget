@@ -6,13 +6,14 @@ import { api, peso, sampleInput, provinces } from '@/lib/client';
 import type { Estimate, ProjectInput, SavedProject, User, Finish } from '@/lib/types';
 import { ProjectsView, PlannerView, MaterialsView, AccountModal, InfoView } from './SecondaryViews';
 import HomeDesk from '@/components/HomeDesk';
+import BrandMark from '@/components/BrandMark';
 
 type View = 'home' | 'new' | 'result' | 'optimize' | 'projects' | 'planner' | 'materials' | string;
 const viewPath: Record<string, string> = { home: '/', new: '/projects/new', result: '/estimate', optimize: '/optimize', projects: '/projects', planner: '/budget-planner', materials: '/tools/materials' };
 const pathView = () => { const p = window.location.pathname; if (/^\/projects\/[^/]+$/.test(p) && p!=='/projects/new') return 'result'; if(['/dashboard','/reports','/sign-in','/sign-up'].includes(p)) return 'projects'; return Object.keys(viewPath).find(k => viewPath[k] === p) || p.replace(/^\//, '') || 'home'; };
 const finishNames = { basic: 'Basic', standard: 'Standard', premium: 'Premium' };
 const steps = ['Project details', 'Floor area', 'Specifications', 'Your budget', 'Review'];
-function Logo() { return <span className="brand"><span className="brand-symbol"><Building2 size={25} strokeWidth={1.8} aria-hidden="true"/></span><span>BuildBudget PH</span></span>; }
+function Logo() { return <span className="brand"><BrandMark/><span>BuildBudget PH</span></span>; }
 
 export default function BuildBudget({initialView='home'}:{initialView?:string}) {
   const [view, setView] = useState<View>(initialView);

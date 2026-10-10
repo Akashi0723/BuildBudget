@@ -1,0 +1,36 @@
+{
+  "method": "Manual visual inspection and runtime assertions, with one palette alignment fix. No plugin certification.",
+  "typecheck": "passed",
+  "checks": [
+    {
+      "viewportWidth": 1536,
+      "overflow": false,
+      "header": true,
+      "footer": true,
+      "account": true,
+      "icon": 200,
+      "mark": 200,
+      "errors": []
+    },
+    {
+      "viewportWidth": 390,
+      "overflow": false,
+      "header": true,
+      "footer": true,
+      "account": true,
+      "icon": 200,
+      "mark": 200,
+      "errors": []
+    },
+    {
+      "viewportWidth": 320,
+      "overflow": false,
+      "header": true,
+      "footer": true,
+      "account": true,
+      "icon": 200,
+      "mark": 200,
+      "errors": []
+    }
+  ]
+}

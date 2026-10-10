@@ -155,6 +155,8 @@ This Scan-mode record describes implemented CSS and components. The local Impecc
 - Flat, ruled groups and tangible outlined fields.
 - Explained reference budgets and plain homeowner language.
 
+The brand mark is an authored terracotta **BB** monogram: two precise, open line forms with straight stems and rounded bowls, paired with the existing Caslon wordmark. It suggests measured architectural drafting without using a generic house icon or a contrasting badge. `public/brand-mark.svg` is shared through `BrandMark.tsx` by the header, footer, and account dialog; `src/app/icon.svg` uses the same geometry with a slightly stronger stroke for small browser tabs. Keep the mark unframed, unanimated, and in its original proportions. Its image is decorative beside the readable brand name. No external plugin generated or certified this asset; UI UX Designer was unavailable in this session.
+
 ## Colors
 
 The palette feels warm and grounded, with terracotta marking action and olive supporting planning information. The frontmatter is the normative color inventory; source custom properties live in `src/app/globals.css`. The sidecar's synthesized OKLCH tonal ramps are preview aids, not additional implemented color tokens.
@@ -271,7 +273,7 @@ Home tool links combine a quiet olive line icon, bold title, explanatory copy, a
 
 ### Don't:
 
-- **Don't** restore the former navy-and-amber palette across the interface. The original navy-and-amber building logo is retained at the user's explicit request.
+- **Don't** restore the former navy-and-amber palette or building badge. Use the terracotta BB monogram created for the planning journal identity.
 - **Don't** add artificial paper grain or notebook doodles to express the journal metaphor.
 - **Don't** replace the observed flat material language with decorative shadows.
 - **Don't** use color alone to communicate selection, errors, or budget status.
