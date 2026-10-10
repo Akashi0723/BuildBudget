@@ -1,0 +1,240 @@
+{
+  "authority": ".impeccable/mocks/02-project-desk.png",
+  "viewport": {
+    "width": 1536,
+    "height": 1024
+  },
+  "method": "manual region measurements; Impeccable launcher unavailable",
+  "palette": {
+    "paper": "#f6f1e8",
+    "ink": "#352a24",
+    "accent": "#9d4635",
+    "rule": "#d3c8bb",
+    "olive": "#68715b"
+  },
+  "regions": [
+    {
+      "id": "header",
+      "kind": "chrome",
+      "box": [
+        0,
+        0,
+        1536,
+        70
+      ]
+    },
+    {
+      "id": "brand",
+      "kind": "text",
+      "box": [
+        53,
+        20,
+        320,
+        32
+      ],
+      "font": "Libre Caslon Text",
+      "weight": 700
+    },
+    {
+      "id": "headline",
+      "kind": "text",
+      "box": [
+        51,
+        104,
+        800,
+        147
+      ],
+      "font": "Libre Caslon Text",
+      "size": 84,
+      "weight": 700
+    },
+    {
+      "id": "introduction",
+      "kind": "text",
+      "box": [
+        51,
+        278,
+        600,
+        46
+      ],
+      "font": "Lato",
+      "size": 21
+    },
+    {
+      "id": "actions",
+      "kind": "control",
+      "box": [
+        51,
+        341,
+        514,
+        57
+      ]
+    },
+    {
+      "id": "house",
+      "kind": "plate",
+      "box": [
+        0,
+        420,
+        968,
+        384
+      ],
+      "plate": "public/project-desk-house.png",
+      "bleed": true
+    },
+    {
+      "id": "estimate-heading",
+      "kind": "text",
+      "box": [
+        1014,
+        160,
+        440,
+        50
+      ],
+      "font": "Libre Caslon Text",
+      "size": 48
+    },
+    {
+      "id": "estimate-intro",
+      "kind": "text",
+      "box": [
+        1014,
+        217,
+        475,
+        27
+      ],
+      "font": "Lato",
+      "size": 19
+    },
+    {
+      "id": "location",
+      "kind": "control",
+      "box": [
+        1014,
+        274,
+        471,
+        67
+      ]
+    },
+    {
+      "id": "area",
+      "kind": "control",
+      "box": [
+        1014,
+        364,
+        471,
+        70
+      ]
+    },
+    {
+      "id": "finish",
+      "kind": "control",
+      "box": [
+        1014,
+        458,
+        471,
+        70
+      ]
+    },
+    {
+      "id": "construction-row",
+      "kind": "text",
+      "box": [
+        1014,
+        588,
+        471,
+        26
+      ]
+    },
+    {
+      "id": "contingency-row",
+      "kind": "text",
+      "box": [
+        1014,
+        625,
+        471,
+        25
+      ]
+    },
+    {
+      "id": "total-row",
+      "kind": "text",
+      "box": [
+        1014,
+        687,
+        471,
+        28
+      ]
+    },
+    {
+      "id": "demonstration-note",
+      "kind": "text",
+      "box": [
+        1014,
+        747,
+        471,
+        22
+      ]
+    },
+    {
+      "id": "tool-strip",
+      "kind": "chrome",
+      "box": [
+        0,
+        804,
+        1536,
+        165
+      ]
+    },
+    {
+      "id": "tool-strip-heading",
+      "kind": "text",
+      "box": [
+        51,
+        850,
+        458,
+        49
+      ]
+    },
+    {
+      "id": "estimator-link",
+      "kind": "control",
+      "box": [
+        562,
+        844,
+        301,
+        97
+      ]
+    },
+    {
+      "id": "planner-link",
+      "kind": "control",
+      "box": [
+        901,
+        844,
+        290,
+        97
+      ]
+    },
+    {
+      "id": "materials-link",
+      "kind": "control",
+      "box": [
+        1224,
+        844,
+        275,
+        97
+      ]
+    },
+    {
+      "id": "footer",
+      "kind": "chrome",
+      "box": [
+        51,
+        977,
+        1434,
+        28
+      ]
+    }
+  ]
+}

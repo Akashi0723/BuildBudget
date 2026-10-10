@@ -1,0 +1,57 @@
+{
+  "workflow": "comp",
+  "approvedComp": ".impeccable/mocks/02-project-desk.png",
+  "phases": {
+    "comps": {
+      "status": "closed",
+      "approval": "User: i choose 2"
+    },
+    "spec": {
+      "status": "closed",
+      "method": "Manual region measurements"
+    },
+    "plates": {
+      "status": "closed",
+      "asset": "public/project-desk-house.png",
+      "provenance": "Exact generation prompt embedded in PNG; adjacent provenance JSON"
+    },
+    "hero": {
+      "status": "closed",
+      "method": "Manual side-by-side and paired-region review",
+      "evidence": ".impeccable/review/hero-repro.png",
+      "gate": {
+        "score": null,
+        "reason": "Automated launcher unavailable"
+      }
+    },
+    "responsive": {
+      "status": "closed",
+      "widths": [
+        390,
+        1048,
+        1536
+      ],
+      "evidence": ".impeccable/review/browser-smoke.json"
+    },
+    "review": {
+      "status": "closed",
+      "method": "Independent fresh-agent manual visual/source review",
+      "initialDisposition": "fix",
+      "finalDisposition": "ship",
+      "verdictScope": "Both scored fixes resolved; no batch regressions",
+      "evidence": [
+        ".impeccable/review/finish-review.md",
+        ".impeccable/review/finish-verdict.md"
+      ]
+    },
+    "documentation": {
+      "status": "closed",
+      "files": [
+        "DESIGN.md",
+        ".impeccable/design.json"
+      ],
+      "method": "Independent extraction of implemented tokens and components; schemaVersion2 sidecar"
+    }
+  },
+  "automatedGates": "Unavailable local launcher; no numeric fidelity score, heatmap, seed key, or detector pass claimed. User-pinned comp and manual evidence govern this implementation."
+}

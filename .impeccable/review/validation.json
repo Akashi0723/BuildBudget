@@ -1,0 +1,73 @@
+{
+  "unit": {
+    "command": "npm test",
+    "passed": 5
+  },
+  "existingBrowserAndAPI": {
+    "command": "npm run test:e2e",
+    "passed": 9,
+    "note": "Existing tests passed together; the initial added test needed selector corrections."
+  },
+  "newQuickPlanRegression": {
+    "command": "npm run test:e2e -- tests/home.spec.ts",
+    "passed": 1,
+    "covers": [
+      "Decimal area120.05",
+      "Invalid area recovery",
+      "Handoff survives delayed session response",
+      "City must be supplied",
+      "Chosen province and floor area retained",
+      "Current-route mobile navigation focus"
+    ]
+  },
+  "productionBuild": {
+    "command": "npm run build",
+    "result": "passed after final corrections"
+  },
+  "typecheck": {
+    "command": "npm run typecheck",
+    "result": "passed; also checked by final production build"
+  },
+  "manualBrowserSmoke": {
+    "evidence": ".impeccable/review/browser-smoke.json",
+    "errors": [],
+    "viewportWidths": [
+      390,
+      1048,
+      1536
+    ],
+    "covers": [
+      "Standard/basic/premium reference calculations",
+      "Quick-plan input handoff",
+      "Mobile tool navigation",
+      "Planner/material stale-result clearing",
+      "Font loading",
+      "No horizontal overflow",
+      "Dialog escape"
+    ]
+  },
+  "designReview": {
+    "result": "ship",
+    "scope": "Two listed material fixes resolved; manual review only",
+    "evidence": ".impeccable/review/finish-verdict.md"
+  },
+  "automatedImpeccableGates": {
+    "available": false,
+    "reason": "Local launcher is absent; no score, detector pass or heatmap certification claimed"
+  },
+  "hostingDeployment": {
+    "verified": false,
+    "note": "GitHub publication does not deploy the user's main hosting service."
+  },
+  "productionRuntime": {
+    "result": "passed",
+    "home": "Hydrated; \u20b14,356,000 reference displayed",
+    "optimizedImage": {
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    "selfHostedDisplayFont": {
+      "status": 200
+    }
+  }
+}

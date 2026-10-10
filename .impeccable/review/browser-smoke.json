@@ -1,0 +1,96 @@
+{
+  "checks": [
+    {
+      "name": "desktop",
+      "width": 1536,
+      "scroll": 1536,
+      "height": 1168,
+      "caslon": true,
+      "lato": true
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "scroll": 390,
+      "height": 2245,
+      "caslon": true,
+      "lato": true
+    },
+    {
+      "name": "user-1048",
+      "width": 1048,
+      "scroll": 1048,
+      "height": 1117,
+      "caslon": true,
+      "lato": true
+    },
+    {
+      "name": "wizard-desktop",
+      "width": 1440,
+      "scroll": 1440,
+      "height": 1234,
+      "caslon": true,
+      "lato": true
+    },
+    {
+      "name": "wizard-mobile",
+      "width": 390,
+      "scroll": 390,
+      "height": 1499,
+      "caslon": true,
+      "lato": true
+    },
+    {
+      "name": "planner-mobile",
+      "width": 390,
+      "scroll": 390,
+      "height": 1546,
+      "caslon": true,
+      "lato": true
+    },
+    {
+      "name": "planner-desktop",
+      "width": 1440,
+      "scroll": 1440,
+      "height": 1775,
+      "caslon": true,
+      "lato": true
+    },
+    {
+      "name": "materials-desktop",
+      "width": 1440,
+      "scroll": 1440,
+      "height": 1070,
+      "caslon": true,
+      "lato": true
+    },
+    {
+      "name": "materials-mobile",
+      "width": 390,
+      "scroll": 390,
+      "height": 1892,
+      "caslon": true,
+      "lato": true
+    },
+    {
+      "name": "projects-mobile",
+      "width": 390,
+      "scroll": 390,
+      "height": 844,
+      "caslon": true,
+      "lato": true
+    },
+    {
+      "name": "account-mobile",
+      "width": 390,
+      "scroll": 390,
+      "height": 2245,
+      "caslon": true,
+      "lato": true
+    }
+  ],
+  "errors": [],
+  "quickEstimate": "default/basic/premium, invalid area, location change, wizard handoff and required city verified",
+  "navigation": "mobile menu and route heading focus verified",
+  "staleResults": "planner and material results clear when inputs change"
+}

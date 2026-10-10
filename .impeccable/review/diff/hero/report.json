@@ -1,0 +1,286 @@
+{
+  "method": "Manual screenshot and DOM measurement comparison; no automated comp-diff score",
+  "approvedComp": ".impeccable/mocks/02-project-desk.png",
+  "capture": ".impeccable/review/desktop.png",
+  "score": null,
+  "heatmap": null,
+  "reason": "Installed cloud skill has no callable local Impeccable launcher",
+  "regions": [
+    {
+      "id": "header",
+      "box": [
+        0,
+        0,
+        1536,
+        70
+      ],
+      "score": null,
+      "verdict": "requires independent visual review",
+      "pair": "regions/header.png"
+    },
+    {
+      "id": "brand",
+      "box": [
+        53,
+        20,
+        320,
+        32
+      ],
+      "score": null,
+      "verdict": "requires independent visual review",
+      "pair": "regions/brand.png"
+    },
+    {
+      "id": "headline",
+      "box": [
+        51,
+        104,
+        800,
+        147
+      ],
+      "score": null,
+      "verdict": "requires independent visual review",
+      "pair": "regions/headline.png"
+    },
+    {
+      "id": "introduction",
+      "box": [
+        51,
+        278,
+        600,
+        46
+      ],
+      "score": null,
+      "verdict": "requires independent visual review",
+      "pair": "regions/introduction.png"
+    },
+    {
+      "id": "actions",
+      "box": [
+        51,
+        341,
+        514,
+        57
+      ],
+      "score": null,
+      "verdict": "requires independent visual review",
+      "pair": "regions/actions.png"
+    },
+    {
+      "id": "house",
+      "box": [
+        0,
+        420,
+        968,
+        384
+      ],
+      "score": null,
+      "verdict": "requires independent visual review",
+      "pair": "regions/house.png"
+    },
+    {
+      "id": "estimate-heading",
+      "box": [
+        1014,
+        160,
+        440,
+        50
+      ],
+      "score": null,
+      "verdict": "requires independent visual review",
+      "pair": "regions/estimate-heading.png"
+    },
+    {
+      "id": "estimate-intro",
+      "box": [
+        1014,
+        217,
+        475,
+        27
+      ],
+      "score": null,
+      "verdict": "requires independent visual review",
+      "pair": "regions/estimate-intro.png"
+    },
+    {
+      "id": "location",
+      "box": [
+        1014,
+        274,
+        471,
+        67
+      ],
+      "score": null,
+      "verdict": "requires independent visual review",
+      "pair": "regions/location.png"
+    },
+    {
+      "id": "area",
+      "box": [
+        1014,
+        364,
+        471,
+        70
+      ],
+      "score": null,
+      "verdict": "requires independent visual review",
+      "pair": "regions/area.png"
+    },
+    {
+      "id": "finish",
+      "box": [
+        1014,
+        458,
+        471,
+        70
+      ],
+      "score": null,
+      "verdict": "requires independent visual review",
+      "pair": "regions/finish.png"
+    },
+    {
+      "id": "construction-row",
+      "box": [
+        1014,
+        588,
+        471,
+        26
+      ],
+      "score": null,
+      "verdict": "requires independent visual review",
+      "pair": "regions/construction-row.png"
+    },
+    {
+      "id": "contingency-row",
+      "box": [
+        1014,
+        625,
+        471,
+        25
+      ],
+      "score": null,
+      "verdict": "requires independent visual review",
+      "pair": "regions/contingency-row.png"
+    },
+    {
+      "id": "total-row",
+      "box": [
+        1014,
+        687,
+        471,
+        28
+      ],
+      "score": null,
+      "verdict": "requires independent visual review",
+      "pair": "regions/total-row.png"
+    },
+    {
+      "id": "demonstration-note",
+      "box": [
+        1014,
+        747,
+        471,
+        22
+      ],
+      "score": null,
+      "verdict": "requires independent visual review",
+      "pair": "regions/demonstration-note.png"
+    },
+    {
+      "id": "tool-strip",
+      "box": [
+        0,
+        804,
+        1536,
+        165
+      ],
+      "score": null,
+      "verdict": "requires independent visual review",
+      "pair": "regions/tool-strip.png"
+    },
+    {
+      "id": "tool-strip-heading",
+      "box": [
+        51,
+        850,
+        458,
+        49
+      ],
+      "score": null,
+      "verdict": "requires independent visual review",
+      "pair": "regions/tool-strip-heading.png"
+    },
+    {
+      "id": "estimator-link",
+      "box": [
+        562,
+        844,
+        301,
+        97
+      ],
+      "score": null,
+      "verdict": "requires independent visual review",
+      "pair": "regions/estimator-link.png"
+    },
+    {
+      "id": "planner-link",
+      "box": [
+        901,
+        844,
+        290,
+        97
+      ],
+      "score": null,
+      "verdict": "requires independent visual review",
+      "pair": "regions/planner-link.png"
+    },
+    {
+      "id": "materials-link",
+      "box": [
+        1224,
+        844,
+        275,
+        97
+      ],
+      "score": null,
+      "verdict": "requires independent visual review",
+      "pair": "regions/materials-link.png"
+    },
+    {
+      "id": "footer",
+      "box": [
+        51,
+        977,
+        1434,
+        28
+      ],
+      "score": null,
+      "verdict": "requires independent visual review",
+      "pair": "regions/footer.png"
+    }
+  ],
+  "groundSample": {
+    "point": [
+      1000,
+      100
+    ],
+    "comp": [
+      245,
+      238,
+      229
+    ],
+    "actual": [
+      246,
+      241,
+      232
+    ]
+  },
+  "adaptations": [
+    "Self-hosted obtainable Caslon/Lato faces per surface approval",
+    "Native number input removes generated dropdown arrow on area",
+    "10% contingency explicitly labeled; working quick-plan handoff added",
+    "Tool descriptions match implemented quantities and budget-to-area planning",
+    "Full product limitations retained in footer",
+    "Phone reading order intro, estimate, photograph, tools"
+  ]
+}

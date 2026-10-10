@@ -1,0 +1,7 @@
+{
+  "kind": "generated architectural illustration",
+  "prompt": "Produce only a standalone high-resolution architectural IMAGE ASSET for a website, NO website UI, NO text, NO lettering, NO numbers, NO captions, NO controls. Use the attached approved website mockup as a visual reference ONLY for the HOUSE PHOTO in its lower-left region. Recreate the same contemporary two-storey tropical Philippine home: white plaster, warm vertical timber panels, a broad dark overhanging flat roof, shaded balcony, elegant concrete boundary wall and timber gate, palm fronds at the top left, lush tropical planting. Warm natural morning light, realistic architectural visualization, straight-on street-facing composition. Landscape photograph with the whole facade and roof fully inside the frame, enough horizontal margin to crop into a wide 2.5:1 website slot. High craftsmanship, believable tropical materials, very close house/camera/material/light character to that reference image region. The asset is explicitly an illustrative concept home, not evidence of a built customer project. Opaque background. Do not reproduce ANY of the website interface from the reference.",
+  "reference": ".impeccable/mocks/02-project-desk.png",
+  "original": "/workspace/generated_images/exec-50ed458e-3fae-4691-a8b5-4ce74be83ee9.png",
+  "purpose": "Standalone plate for the approved Project desk layout; illustrative, not a built customer project"
+}
