@@ -1,4 +1,4 @@
-# Budget Build
+# BuildBudget
 
 <!-- impeccable:product-schema 1 -->
 
@@ -22,7 +22,7 @@ Rates are educational demonstration assumptions, not current market prices. Esti
 
 ## Brand Commitments
 
-The public brand is Budget Build, with no PH suffix. The user requested that the two terracotta monogram Bs become the initials of Budget and Build, inserting “udget” and “uild” beside each B. Use those custom vector initials with cocoa Caslon lettering throughout the header, footer, and account dialog. Retain the compact BB monogram for the browser icon. Preserve the warm planning journal design and plain homeowner language.
+The public brand is BuildBudget, with no PH suffix. The latest user instruction to apply the selected Modular Block logo and matching theme explicitly supersedes the earlier Budget Build terracotta initials and serif planning-journal identity. Use the approved concept B: forest modular block, outlined BuildBudget lockup, warm paper and white surfaces, ink text, and self-hosted Manrope UI typography. Reuse public/brand-logo.svg in the header, footer, and account dialog; use the modular mark for the app/browser icon and carry the identity into PDF reports. Preserve clear homeowner language and all working planning calculations.
 
 ## Evidence on Hand
 

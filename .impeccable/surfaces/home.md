@@ -1,25 +1,27 @@
-# Home and planning workspace redesign
+# BuildBudget home surface
 
-## Scope and mode
+## Scope and authority
 
 Homepage: Persuade. Estimator, projects, planner, materials, optimizer: Operate. Supporting information: Read.
 
-The user confirmed a clearly different brand look and a welcoming, clear, easy-to-use homeowner planning experience. They selected Planning journal and requested an image mockup before code.
+The latest user selected concept B, Modular Block, and asked to apply its BuildBudget logo and theme. This supersedes the earlier Planning journal/Project desk visual direction and old option-2 comp as implementation authority. Preserve the confirmed welcoming, clear homeowner experience and existing calculation flows.
 
 ## Direction contract
 
-THESIS: Present planning as a homeowner's personal build notebook, with real project inputs and explained costs. Replace the current navy/amber marketing composition.
+THESIS: Make preliminary planning clear through a confident modular identity, useful project inputs, and explained reference costs.
 
-OWN-WORLD: Warm paper ground, deep cocoa text, terracotta action surfaces, editorial display typography, readable UI typography, clean rules and practical document-like grouping. No artificial paper grain, notebook doodles, or invented proof.
+OWN-WORLD: Forest actions, ink text, warm paper ground, white working surfaces, self-hosted Manrope, and the outlined vector BuildBudget lockup. No invented proof or market-rate claims.
 
-STORY: Understand what the free tools calculate, see that estimates use demonstration rates, choose whether to start from a project or an available budget, then enter the working planning flow.
+STORY: Explain the free planning tools and demonstration rates, let homeowners begin from project inputs or an available budget, then enter the working flow.
 
-FIRST VIEWPORT: Approved Project desk comp, 1536 × 1024. A 70px header leads a 63/37 split: left serif headline and two actions above a wide architectural plate; right a flat full-height quick-estimate form and explained amount rows. At 804px the composition meets a horizontal planning-tools strip. Match its proportions, calm paper ground, terracotta buttons, and typography. On phones, stack the introduction, working form, photo, and tool links in that order.
+FIRST VIEWPORT: The header is 88px. The desktop desk caps at 1440px with 50px gutters, a 1.3:1 split, 56px column gap, and a 280px photo row. The left column pairs a bold introduction and two actions with the architectural illustration below; the right column is a white quick-estimate panel spanning both rows. A forest band emphasizes the reference total. Below, an asymmetric two-column tools section pairs an introduction with ruled tool entries. At 1100px the split tightens; at 800px the order stacks introduction, estimate, illustration, then tools. At 420px actions stack and gutters reduce to 20px.
 
-FORM: User selected Planning journal from three presented directions. The local concept-seed and build-phase launchers are missing; no generated seed or automatic phase result is claimed. Native image generation and manual artifact records are the fallback.
+SIGNATURE: Changing location, area, or finish updates the existing server reference calculation. Preserve construction and contingency explanations, unavailable-value placeholders, loading/recovery states, and visible demonstration assumptions.
 
-FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+## Assets and review
 
-## Approval
+`public/brand-logo.svg` is the approved Modular Block lockup. `public/project-desk-house.png` is a generated architectural illustration with embedded provenance, not a built client project. Keep the illustration caption and actual material-tool descriptions.
 
-The user approved option 2 with “i choose 2”. Approved comp: .impeccable/mocks/02-project-desk.png. The quick estimate uses the existing server calculation. Correct generated tool descriptions to the actual material toolkit and label rates as educational demonstration assumptions. Generate a standalone architectural plate from the approved comp; never ship UI text as pixels. Fonts may use the closest obtainable self-hosted faces. Signature interaction: changing location, area, or finish updates the explained reference budget; incomplete inputs have an explicit recovery state.
+The Impeccable launcher/detector are unavailable. Review uses manual desktop/mobile screenshots and repository tests; no automatic design certification is claimed. Exact test and build outcomes belong in the task's final verification report.
+
+Finish review verdict: Ship. Four settled views were manually reviewed: desktop/mobile home, desktop planner, and mobile materials. Account and PDF branding were not independently visually reviewed. Production build passed; 5 unit tests, 10 browser/API tests, and 3 focused API/report reruns passed.

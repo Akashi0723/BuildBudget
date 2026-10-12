@@ -1,223 +1,223 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-10T14:55:01.223118Z",
-  "title": "Design System: Budget Build",
+  "generatedAt": "2026-10-12T00:00:00Z",
+  "title": "Design System: BuildBudget",
   "extensions": {
     "colorMeta": {
       "paper": {
         "role": "neutral",
         "displayName": "Warm Paper",
         "tonalRamp": [
-          "oklch(15% 0.0131 82.40)",
-          "oklch(26.43% 0.0131 82.40)",
-          "oklch(37.86% 0.0131 82.40)",
-          "oklch(49.29% 0.0131 82.40)",
-          "oklch(60.71% 0.0131 82.40)",
-          "oklch(72.14% 0.0131 82.40)",
-          "oklch(83.57% 0.0131 82.40)",
-          "oklch(95% 0.0131 82.40)"
+          "oklch(15.00% 0.0082 91.48)",
+          "oklch(26.43% 0.0082 91.48)",
+          "oklch(37.86% 0.0082 91.48)",
+          "oklch(49.29% 0.0082 91.48)",
+          "oklch(60.71% 0.0082 91.48)",
+          "oklch(72.14% 0.0082 91.48)",
+          "oklch(83.57% 0.0082 91.48)",
+          "oklch(95.00% 0.0082 91.48)"
         ]
       },
       "surface": {
         "role": "neutral",
-        "displayName": "Clean Paper",
+        "displayName": "White Working Surface",
         "tonalRamp": [
-          "oklch(15% 0.0073 80.72)",
-          "oklch(26.43% 0.0073 80.72)",
-          "oklch(37.86% 0.0073 80.72)",
-          "oklch(49.29% 0.0073 80.72)",
-          "oklch(60.71% 0.0073 80.72)",
-          "oklch(72.14% 0.0073 80.72)",
-          "oklch(83.57% 0.0073 80.72)",
-          "oklch(95% 0.0073 80.72)"
-        ]
-      },
-      "ink": {
-        "role": "neutral",
-        "displayName": "Deep Cocoa",
-        "tonalRamp": [
-          "oklch(15% 0.0196 50.20)",
-          "oklch(26.43% 0.0196 50.20)",
-          "oklch(37.86% 0.0196 50.20)",
-          "oklch(49.29% 0.0196 50.20)",
-          "oklch(60.71% 0.0196 50.20)",
-          "oklch(72.14% 0.0196 50.20)",
-          "oklch(83.57% 0.0196 50.20)",
-          "oklch(95% 0.0196 50.20)"
-        ]
-      },
-      "muted": {
-        "role": "neutral",
-        "displayName": "Muted Cocoa",
-        "tonalRamp": [
-          "oklch(15% 0.0229 59.81)",
-          "oklch(26.43% 0.0229 59.81)",
-          "oklch(37.86% 0.0229 59.81)",
-          "oklch(49.29% 0.0229 59.81)",
-          "oklch(60.71% 0.0229 59.81)",
-          "oklch(72.14% 0.0229 59.81)",
-          "oklch(83.57% 0.0229 59.81)",
-          "oklch(95% 0.0229 59.81)"
-        ]
-      },
-      "border": {
-        "role": "neutral",
-        "displayName": "Paper Rule",
-        "tonalRamp": [
-          "oklch(15% 0.0217 72.11)",
-          "oklch(26.43% 0.0217 72.11)",
-          "oklch(37.86% 0.0217 72.11)",
-          "oklch(49.29% 0.0217 72.11)",
-          "oklch(60.71% 0.0217 72.11)",
-          "oklch(72.14% 0.0217 72.11)",
-          "oklch(83.57% 0.0217 72.11)",
-          "oklch(95% 0.0217 72.11)"
-        ]
-      },
-      "control-border": {
-        "role": "neutral",
-        "displayName": "Control Outline",
-        "tonalRamp": [
-          "oklch(15% 0.0257 65.22)",
-          "oklch(26.43% 0.0257 65.22)",
-          "oklch(37.86% 0.0257 65.22)",
-          "oklch(49.29% 0.0257 65.22)",
-          "oklch(60.71% 0.0257 65.22)",
-          "oklch(72.14% 0.0257 65.22)",
-          "oklch(83.57% 0.0257 65.22)",
-          "oklch(95% 0.0257 65.22)"
-        ]
-      },
-      "terracotta": {
-        "role": "primary",
-        "displayName": "Terracotta",
-        "tonalRamp": [
-          "oklch(15% 0.1201 32.68)",
-          "oklch(26.43% 0.1201 32.68)",
-          "oklch(37.86% 0.1201 32.68)",
-          "oklch(49.29% 0.1201 32.68)",
-          "oklch(60.71% 0.1201 32.68)",
-          "oklch(72.14% 0.1201 32.68)",
-          "oklch(83.57% 0.1201 32.68)",
-          "oklch(95% 0.1201 32.68)"
-        ]
-      },
-      "terracotta-hover": {
-        "role": "primary",
-        "displayName": "Deep Terracotta",
-        "tonalRamp": [
-          "oklch(15% 0.1053 32.36)",
-          "oklch(26.43% 0.1053 32.36)",
-          "oklch(37.86% 0.1053 32.36)",
-          "oklch(49.29% 0.1053 32.36)",
-          "oklch(60.71% 0.1053 32.36)",
-          "oklch(72.14% 0.1053 32.36)",
-          "oklch(83.57% 0.1053 32.36)",
-          "oklch(95% 0.1053 32.36)"
-        ]
-      },
-      "terracotta-soft": {
-        "role": "primary",
-        "displayName": "Soft Terracotta",
-        "tonalRamp": [
-          "oklch(15% 0.0213 56.11)",
-          "oklch(26.43% 0.0213 56.11)",
-          "oklch(37.86% 0.0213 56.11)",
-          "oklch(49.29% 0.0213 56.11)",
-          "oklch(60.71% 0.0213 56.11)",
-          "oklch(72.14% 0.0213 56.11)",
-          "oklch(83.57% 0.0213 56.11)",
-          "oklch(95% 0.0213 56.11)"
-        ]
-      },
-      "olive": {
-        "role": "secondary",
-        "displayName": "Quiet Olive",
-        "tonalRamp": [
-          "oklch(15% 0.0351 125.68)",
-          "oklch(26.43% 0.0351 125.68)",
-          "oklch(37.86% 0.0351 125.68)",
-          "oklch(49.29% 0.0351 125.68)",
-          "oklch(60.71% 0.0351 125.68)",
-          "oklch(72.14% 0.0351 125.68)",
-          "oklch(83.57% 0.0351 125.68)",
-          "oklch(95% 0.0351 125.68)"
-        ]
-      },
-      "olive-soft": {
-        "role": "secondary",
-        "displayName": "Soft Olive",
-        "tonalRamp": [
-          "oklch(15% 0.0176 117.30)",
-          "oklch(26.43% 0.0176 117.30)",
-          "oklch(37.86% 0.0176 117.30)",
-          "oklch(49.29% 0.0176 117.30)",
-          "oklch(60.71% 0.0176 117.30)",
-          "oklch(72.14% 0.0176 117.30)",
-          "oklch(83.57% 0.0176 117.30)",
-          "oklch(95% 0.0176 117.30)"
-        ]
-      },
-      "white": {
-        "role": "neutral",
-        "displayName": "White",
-        "tonalRamp": [
-          "oklch(15% 0.0000 0.00)",
+          "oklch(15.00% 0.0000 0.00)",
           "oklch(26.43% 0.0000 0.00)",
           "oklch(37.86% 0.0000 0.00)",
           "oklch(49.29% 0.0000 0.00)",
           "oklch(60.71% 0.0000 0.00)",
           "oklch(72.14% 0.0000 0.00)",
           "oklch(83.57% 0.0000 0.00)",
-          "oklch(95% 0.0000 0.00)"
+          "oklch(95.00% 0.0000 0.00)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.0275 172.21)",
+          "oklch(26.43% 0.0275 172.21)",
+          "oklch(37.86% 0.0275 172.21)",
+          "oklch(49.29% 0.0275 172.21)",
+          "oklch(60.71% 0.0275 172.21)",
+          "oklch(72.14% 0.0275 172.21)",
+          "oklch(83.57% 0.0275 172.21)",
+          "oklch(95.00% 0.0275 172.21)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Green",
+        "tonalRamp": [
+          "oklch(15.00% 0.0271 160.90)",
+          "oklch(26.43% 0.0271 160.90)",
+          "oklch(37.86% 0.0271 160.90)",
+          "oklch(49.29% 0.0271 160.90)",
+          "oklch(60.71% 0.0271 160.90)",
+          "oklch(72.14% 0.0271 160.90)",
+          "oklch(83.57% 0.0271 160.90)",
+          "oklch(95.00% 0.0271 160.90)"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Planning Rule",
+        "tonalRamp": [
+          "oklch(15.00% 0.0143 138.71)",
+          "oklch(26.43% 0.0143 138.71)",
+          "oklch(37.86% 0.0143 138.71)",
+          "oklch(49.29% 0.0143 138.71)",
+          "oklch(60.71% 0.0143 138.71)",
+          "oklch(72.14% 0.0143 138.71)",
+          "oklch(83.57% 0.0143 138.71)",
+          "oklch(95.00% 0.0143 138.71)"
+        ]
+      },
+      "control-border": {
+        "role": "neutral",
+        "displayName": "Control Outline",
+        "tonalRamp": [
+          "oklch(15.00% 0.0265 158.72)",
+          "oklch(26.43% 0.0265 158.72)",
+          "oklch(37.86% 0.0265 158.72)",
+          "oklch(49.29% 0.0265 158.72)",
+          "oklch(60.71% 0.0265 158.72)",
+          "oklch(72.14% 0.0265 158.72)",
+          "oklch(83.57% 0.0265 158.72)",
+          "oklch(95.00% 0.0265 158.72)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Forest",
+        "tonalRamp": [
+          "oklch(15.00% 0.0761 164.90)",
+          "oklch(26.43% 0.0761 164.90)",
+          "oklch(37.86% 0.0761 164.90)",
+          "oklch(49.29% 0.0761 164.90)",
+          "oklch(60.71% 0.0761 164.90)",
+          "oklch(72.14% 0.0761 164.90)",
+          "oklch(83.57% 0.0761 164.90)",
+          "oklch(95.00% 0.0761 164.90)"
+        ]
+      },
+      "accent-hover": {
+        "role": "primary",
+        "displayName": "Deep Forest",
+        "tonalRamp": [
+          "oklch(15.00% 0.0639 165.47)",
+          "oklch(26.43% 0.0639 165.47)",
+          "oklch(37.86% 0.0639 165.47)",
+          "oklch(49.29% 0.0639 165.47)",
+          "oklch(60.71% 0.0639 165.47)",
+          "oklch(72.14% 0.0639 165.47)",
+          "oklch(83.57% 0.0639 165.47)",
+          "oklch(95.00% 0.0639 165.47)"
+        ]
+      },
+      "accent-soft": {
+        "role": "primary",
+        "displayName": "Soft Forest",
+        "tonalRamp": [
+          "oklch(15.00% 0.0160 148.40)",
+          "oklch(26.43% 0.0160 148.40)",
+          "oklch(37.86% 0.0160 148.40)",
+          "oklch(49.29% 0.0160 148.40)",
+          "oklch(60.71% 0.0160 148.40)",
+          "oklch(72.14% 0.0160 148.40)",
+          "oklch(83.57% 0.0160 148.40)",
+          "oklch(95.00% 0.0160 148.40)"
+        ]
+      },
+      "forest": {
+        "role": "neutral",
+        "displayName": "Forest Support",
+        "tonalRamp": [
+          "oklch(15.00% 0.0761 164.90)",
+          "oklch(26.43% 0.0761 164.90)",
+          "oklch(37.86% 0.0761 164.90)",
+          "oklch(49.29% 0.0761 164.90)",
+          "oklch(60.71% 0.0761 164.90)",
+          "oklch(72.14% 0.0761 164.90)",
+          "oklch(83.57% 0.0761 164.90)",
+          "oklch(95.00% 0.0761 164.90)"
+        ]
+      },
+      "forest-soft": {
+        "role": "neutral",
+        "displayName": "Soft Forest Support",
+        "tonalRamp": [
+          "oklch(15.00% 0.0160 148.40)",
+          "oklch(26.43% 0.0160 148.40)",
+          "oklch(37.86% 0.0160 148.40)",
+          "oklch(49.29% 0.0160 148.40)",
+          "oklch(60.71% 0.0160 148.40)",
+          "oklch(72.14% 0.0160 148.40)",
+          "oklch(83.57% 0.0160 148.40)",
+          "oklch(95.00% 0.0160 148.40)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "tonalRamp": [
+          "oklch(15.00% 0.0000 0.00)",
+          "oklch(26.43% 0.0000 0.00)",
+          "oklch(37.86% 0.0000 0.00)",
+          "oklch(49.29% 0.0000 0.00)",
+          "oklch(60.71% 0.0000 0.00)",
+          "oklch(72.14% 0.0000 0.00)",
+          "oklch(83.57% 0.0000 0.00)",
+          "oklch(95.00% 0.0000 0.00)"
         ]
       },
       "hover-paper": {
         "role": "neutral",
         "displayName": "Hover Paper",
         "tonalRamp": [
-          "oklch(15% 0.0171 76.11)",
-          "oklch(26.43% 0.0171 76.11)",
-          "oklch(37.86% 0.0171 76.11)",
-          "oklch(49.29% 0.0171 76.11)",
-          "oklch(60.71% 0.0171 76.11)",
-          "oklch(72.14% 0.0171 76.11)",
-          "oklch(83.57% 0.0171 76.11)",
-          "oklch(95% 0.0171 76.11)"
+          "oklch(15.00% 0.0119 133.38)",
+          "oklch(26.43% 0.0119 133.38)",
+          "oklch(37.86% 0.0119 133.38)",
+          "oklch(49.29% 0.0119 133.38)",
+          "oklch(60.71% 0.0119 133.38)",
+          "oklch(72.14% 0.0119 133.38)",
+          "oklch(83.57% 0.0119 133.38)",
+          "oklch(95.00% 0.0119 133.38)"
         ]
       },
       "selected-paper": {
         "role": "primary",
         "displayName": "Selected Paper",
         "tonalRamp": [
-          "oklch(15% 0.0162 64.67)",
-          "oklch(26.43% 0.0162 64.67)",
-          "oklch(37.86% 0.0162 64.67)",
-          "oklch(49.29% 0.0162 64.67)",
-          "oklch(60.71% 0.0162 64.67)",
-          "oklch(72.14% 0.0162 64.67)",
-          "oklch(83.57% 0.0162 64.67)",
-          "oklch(95% 0.0162 64.67)"
+          "oklch(15.00% 0.0109 149.86)",
+          "oklch(26.43% 0.0109 149.86)",
+          "oklch(37.86% 0.0109 149.86)",
+          "oklch(49.29% 0.0109 149.86)",
+          "oklch(60.71% 0.0109 149.86)",
+          "oklch(72.14% 0.0109 149.86)",
+          "oklch(83.57% 0.0109 149.86)",
+          "oklch(95.00% 0.0109 149.86)"
         ]
       },
       "selected-ink": {
         "role": "primary",
-        "displayName": "Selected Terracotta Ink",
+        "displayName": "Selected Forest Ink",
         "tonalRamp": [
-          "oklch(15% 0.0989 32.92)",
-          "oklch(26.43% 0.0989 32.92)",
-          "oklch(37.86% 0.0989 32.92)",
-          "oklch(49.29% 0.0989 32.92)",
-          "oklch(60.71% 0.0989 32.92)",
-          "oklch(72.14% 0.0989 32.92)",
-          "oklch(83.57% 0.0989 32.92)",
-          "oklch(95% 0.0989 32.92)"
+          "oklch(15.00% 0.0761 164.90)",
+          "oklch(26.43% 0.0761 164.90)",
+          "oklch(37.86% 0.0761 164.90)",
+          "oklch(49.29% 0.0761 164.90)",
+          "oklch(60.71% 0.0761 164.90)",
+          "oklch(72.14% 0.0761 164.90)",
+          "oklch(83.57% 0.0761 164.90)",
+          "oklch(95.00% 0.0761 164.90)"
         ]
       }
     },
     "typographyMeta": {
       "display": {
-        "displayName": "Editorial Display",
+        "displayName": "Manrope Display",
         "purpose": "Homepage introduction; responsive variants are surface-specific."
       },
       "headline": {
@@ -264,51 +264,60 @@
         "name": "loading-spin",
         "value": "spin 900ms linear infinite",
         "purpose": "Implemented loading indicator; disabled by prefers-reduced-motion."
+      },
+      {
+        "name": "tool-arrow",
+        "value": "transform 180ms ease, background-color 180ms ease",
+        "purpose": "Home arrow moves 3px on hover; disabled with reduced motion."
       }
     ],
     "breakpoints": [
       {
-        "name": "wide-home-frame",
-        "value": "1600px"
+        "name": "observed-1440",
+        "value": "1440px"
       },
       {
-        "name": "compact-workspace",
+        "name": "observed-1300",
         "value": "1300px"
       },
       {
-        "name": "compact-home-desk",
-        "value": "1200px"
-      },
-      {
-        "name": "compact-desktop-workspace",
+        "name": "observed-1180",
         "value": "1180px"
       },
       {
-        "name": "desktop-workspace-minimum",
+        "name": "observed-1100",
+        "value": "1100px"
+      },
+      {
+        "name": "observed-1000",
         "value": "1000px"
       },
       {
-        "name": "navigation-collapse",
+        "name": "observed-999",
         "value": "999px"
       },
       {
-        "name": "home-stack",
+        "name": "observed-800",
         "value": "800px"
       },
       {
-        "name": "workspace-stack",
+        "name": "observed-760",
         "value": "760px"
       },
       {
-        "name": "phone-fields",
+        "name": "observed-560",
         "value": "560px"
       },
       {
-        "name": "home-actions-stack",
+        "name": "observed-420",
         "value": "420px"
       },
       {
-        "name": "narrow-phone",
+        "name": "observed-380",
+        "value": "380px"
+      },
+      {
+        "name": "observed-370",
         "value": "370px"
       }
     ]
@@ -320,7 +329,7 @@
       "refersTo": "button-primary",
       "description": "Main planning action; disabled, hover, and keyboard focus follow the shared button styles.",
       "html": "<button class=\"ds-primary\" type=\"button\">Start free estimate<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14m-7-7 7 7-7 7\"/></svg></button>",
-      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:12px 20px;border:1px solid transparent;border-radius:6px;background:var(--terracotta,#9d4635);color:#fff;font-family:var(--body-font,Lato,Arial,sans-serif);font-size:16px;font-weight:700;line-height:1.4;text-align:center;cursor:pointer;touch-action:manipulation;transition:background-color 160ms ease,color 160ms ease,border-color 160ms ease;}.ds-primary:hover:not(:disabled){background:var(--terracotta-hover,#843a2c)}.ds-primary:focus-visible{outline:3px solid var(--focus,#9d4635);outline-offset:4px;}.ds-primary:disabled{opacity:.55;cursor:not-allowed}.ds-primary svg{flex-shrink:0}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:12px 20px;border:1px solid transparent;border-radius:6px;background:var(--accent,#24634b);color:#fff;font-family:var(--body-font,Manrope,Arial,sans-serif);font-size:16px;font-weight:700;line-height:1.4;text-align:center;cursor:pointer;touch-action:manipulation;transition:background-color 160ms ease,color 160ms ease,border-color 160ms ease;}.ds-primary:hover:not(:disabled){background:var(--accent-hover,#1b4e3b)}.ds-primary:focus-visible{outline:3px solid var(--focus,#24634b);outline-offset:4px;}.ds-primary:disabled{opacity:.55;cursor:not-allowed}.ds-primary svg{flex-shrink:0}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
     },
     {
       "name": "Secondary Button",
@@ -328,15 +337,15 @@
       "refersTo": "button-secondary",
       "description": "Outlined alternative action on the paper ground.",
       "html": "<button class=\"ds-secondary\" type=\"button\">Start with my budget</button>",
-      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:12px 20px;border:1px solid var(--control-border,#8e8073);border-radius:6px;background:transparent;color:var(--ink,#352a24);font-family:var(--body-font,Lato,Arial,sans-serif);font-size:16px;font-weight:700;line-height:1.4;text-align:center;cursor:pointer;touch-action:manipulation;transition:background-color 160ms ease,color 160ms ease,border-color 160ms ease;}.ds-secondary:hover:not(:disabled){background:#eee6db;border-color:var(--muted,#6d6056)}.ds-secondary:focus-visible{outline:3px solid var(--focus,#9d4635);outline-offset:4px;}.ds-secondary:disabled{opacity:.55;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-secondary{transition:none}}"
+      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:12px 20px;border:1px solid var(--control-border,#798b80);border-radius:6px;background:transparent;color:var(--ink,#182b25);font-family:var(--body-font,Manrope,Arial,sans-serif);font-size:16px;font-weight:700;line-height:1.4;text-align:center;cursor:pointer;touch-action:manipulation;transition:background-color 160ms ease,color 160ms ease,border-color 160ms ease;}.ds-secondary:hover:not(:disabled){background:#e9eee6;border-color:var(--muted,#52645a)}.ds-secondary:focus-visible{outline:3px solid var(--focus,#24634b);outline-offset:4px;}.ds-secondary:disabled{opacity:.55;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-secondary{transition:none}}"
     },
     {
       "name": "Text Button",
       "kind": "button",
       "refersTo": "button-text",
-      "description": "Quiet terracotta action used in supporting workspace flows.",
+      "description": "Quiet forest action used in supporting workspace flows.",
       "html": "<button class=\"ds-text\" type=\"button\">Edit assumptions<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14m-7-7 7 7-7 7\"/></svg></button>",
-      "css": ".ds-text{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:10px 0;border:0;background:transparent;color:var(--terracotta,#9d4635);font-family:var(--body-font,Lato,Arial,sans-serif);font-size:14px;font-weight:700;line-height:1.4;cursor:pointer;transition:background-color 160ms ease,color 160ms ease,border-color 160ms ease;}.ds-text:hover:not(:disabled){color:var(--terracotta-hover,#843a2c)}.ds-text:focus-visible{outline:3px solid var(--focus,#9d4635);outline-offset:4px;}.ds-text:disabled{opacity:.55;cursor:not-allowed}.ds-text svg{flex-shrink:0}@media(prefers-reduced-motion:reduce){.ds-text{transition:none}}"
+      "css": ".ds-text{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:10px 0;border:0;background:transparent;color:var(--accent,#24634b);font-family:var(--body-font,Manrope,Arial,sans-serif);font-size:14px;font-weight:700;line-height:1.4;cursor:pointer;transition:background-color 160ms ease,color 160ms ease,border-color 160ms ease;}.ds-text:hover:not(:disabled){color:var(--accent-hover,#1b4e3b)}.ds-text:focus-visible{outline:3px solid var(--focus,#24634b);outline-offset:4px;}.ds-text:disabled{opacity:.55;cursor:not-allowed}.ds-text svg{flex-shrink:0}@media(prefers-reduced-motion:reduce){.ds-text{transition:none}}"
     },
     {
       "name": "Labeled Field",
@@ -344,15 +353,15 @@
       "refersTo": "field",
       "description": "Visible label, outlined editable surface, and adjacent helper text.",
       "html": "<label class=\"ds-field\"><span>Project name</span><input type=\"text\" value=\"My home plan\" aria-describedby=\"ds-project-help\"><small id=\"ds-project-help\">A name to help you find this estimate later.</small></label>",
-      "css": ".ds-field{display:block;min-width:0;margin-bottom:22px;color:var(--ink,#352a24);font-family:var(--body-font,Lato,Arial,sans-serif);font-size:14px;font-weight:700;line-height:1.65}.ds-field>span{display:block}.ds-field input{display:block;width:100%;height:48px;margin-top:8px;padding:10px 13px;border:1px solid var(--control-border,#8e8073);border-radius:6px;background:var(--surface,#fffcf7);color:var(--ink,#352a24);font-family:var(--body-font,Lato,Arial,sans-serif);font-size:16px;font-weight:400;line-height:1.5;caret-color:var(--terracotta,#9d4635)}.ds-field input:hover:not(:disabled){border-color:var(--muted,#6d6056)}.ds-field input:focus-visible{outline:3px solid var(--focus,#9d4635);outline-offset:4px;}.ds-field input:disabled{background:#eee7dc}.ds-field small{display:block;margin-top:8px;color:var(--muted,#6d6056);font-size:14px;font-weight:400;line-height:1.6}"
+      "css": ".ds-field{display:block;min-width:0;margin-bottom:22px;color:var(--ink,#182b25);font-family:var(--body-font,Manrope,Arial,sans-serif);font-size:14px;font-weight:700;line-height:1.65}.ds-field>span{display:block}.ds-field input{display:block;width:100%;height:48px;margin-top:8px;padding:10px 13px;border:1px solid var(--control-border,#798b80);border-radius:6px;background:var(--surface,#ffffff);color:var(--ink,#182b25);font-family:var(--body-font,Manrope,Arial,sans-serif);font-size:16px;font-weight:400;line-height:1.5;caret-color:var(--accent,#24634b)}.ds-field input:hover:not(:disabled){border-color:var(--muted,#52645a)}.ds-field input:focus-visible{outline:3px solid var(--focus,#24634b);outline-offset:4px;}.ds-field input:disabled{background:#e9eee6}.ds-field small{display:block;margin-top:8px;color:var(--muted,#52645a);font-size:14px;font-weight:400;line-height:1.6}"
     },
     {
       "name": "Workspace Navigation",
       "kind": "nav",
       "refersTo": "navigation-selected",
-      "description": "Paper navigation with a soft terracotta selected item and quiet hover feedback.",
+      "description": "Paper navigation with a soft forest selected item and quiet hover feedback.",
       "html": "<nav class=\"ds-navigation\" aria-label=\"Planning tools\"><button type=\"button\" aria-current=\"page\"><svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"4\" y=\"2\" width=\"16\" height=\"20\" rx=\"2\"/><path d=\"M8 6h8M8 10h2m4 0h2M8 14h2m4 0h2M8 18h2m4 0h2\"/></svg>Estimator</button><button type=\"button\">Budget planner</button><button type=\"button\">Material calculators</button></nav>",
-      "css": ".ds-navigation{width:224px;font-family:var(--body-font,Lato,Arial,sans-serif)}.ds-navigation button{display:flex;align-items:center;gap:10px;width:100%;min-height:48px;margin-bottom:4px;padding:12px;border:0;border-radius:6px;background:transparent;color:var(--muted,#6d6056);font-family:var(--body-font,Lato,Arial,sans-serif);font-size:14px;font-weight:400;line-height:1.4;text-align:left;cursor:pointer;transition:background-color 160ms ease,color 160ms ease,border-color 160ms ease;}.ds-navigation button:hover{background:#eee6db;color:var(--ink,#352a24)}.ds-navigation button[aria-current=\"page\"]{background:var(--terracotta-soft,#efe0d6);color:#803b2d;font-weight:700}.ds-navigation button[aria-current=\"page\"] svg{color:var(--terracotta,#9d4635)}.ds-navigation button:focus-visible{outline:3px solid var(--focus,#9d4635);outline-offset:4px;}.ds-navigation svg{width:18px;height:18px;flex-shrink:0}@media(prefers-reduced-motion:reduce){.ds-navigation button{transition:none}}"
+      "css": ".ds-navigation{width:224px;font-family:var(--body-font,Manrope,Arial,sans-serif)}.ds-navigation button{display:flex;align-items:center;gap:10px;width:100%;min-height:48px;margin-bottom:4px;padding:12px;border:0;border-radius:6px;background:transparent;color:var(--muted,#52645a);font-family:var(--body-font,Manrope,Arial,sans-serif);font-size:14px;font-weight:400;line-height:1.4;text-align:left;cursor:pointer;transition:background-color 160ms ease,color 160ms ease,border-color 160ms ease;}.ds-navigation button:hover{background:#e9eee6;color:var(--ink,#182b25)}.ds-navigation button[aria-current=\"page\"]{background:var(--accent-soft,#e4eee5);color:#24634b;font-weight:700}.ds-navigation button[aria-current=\"page\"] svg{color:var(--accent,#24634b)}.ds-navigation button:focus-visible{outline:3px solid var(--focus,#24634b);outline-offset:4px;}.ds-navigation svg{width:18px;height:18px;flex-shrink:0}@media(prefers-reduced-motion:reduce){.ds-navigation button{transition:none}}"
     },
     {
       "name": "Information Badge",
@@ -360,81 +369,78 @@
       "refersTo": "badge",
       "description": "Static compact status label; not an interactive filter.",
       "html": "<span class=\"ds-badge\">Demonstration rates</span>",
-      "css": ".ds-badge{display:inline-flex;align-items:center;max-width:100%;padding:4px 9px;border:1px solid var(--border,#d3c8bb);border-radius:4px;background:var(--paper,#f6f1e8);color:var(--muted,#6d6056);font-family:var(--body-font,Lato,Arial,sans-serif);font-size:12px;font-weight:700;line-height:1.5}"
+      "css": ".ds-badge{display:inline-flex;align-items:center;max-width:100%;padding:4px 9px;border:1px solid var(--border,#d6ddd4);border-radius:4px;background:var(--paper,#f5f3ed);color:var(--muted,#52645a);font-family:var(--body-font,Manrope,Arial,sans-serif);font-size:12px;font-weight:700;line-height:1.5}"
     },
     {
       "name": "Shared Planning Card",
       "kind": "card",
       "refersTo": "card",
-      "description": "Flat outlined container with serif section title and sans-serif supporting copy.",
+      "description": "Flat outlined container with Manrope section title and supporting copy.",
       "html": "<section class=\"ds-card\"><div class=\"ds-card-heading\"><h3>Project details</h3><p>Keep your planning assumptions together.</p></div><p>Review your location, floor area, and finish before continuing.</p></section>",
-      "css": ".ds-card{min-width:0;padding:28px;border:1px solid var(--border,#d3c8bb);border-radius:12px;background:var(--surface,#fffcf7);color:var(--ink,#352a24);font-family:var(--body-font,Lato,Arial,sans-serif);font-size:16px;line-height:1.65}.ds-card-heading{margin-bottom:24px}.ds-card h3{margin:0;color:var(--ink,#352a24);font-family:var(--display-font,\"Libre Caslon Text\",Georgia,serif);font-size:22px;font-weight:700;line-height:1.25;letter-spacing:-.025em}.ds-card p{margin:0;color:var(--muted,#6d6056)}.ds-card-heading p{margin-top:8px;font-size:14px}"
+      "css": ".ds-card{min-width:0;padding:28px;border:1px solid var(--border,#d6ddd4);border-radius:12px;background:var(--surface,#ffffff);color:var(--ink,#182b25);font-family:var(--body-font,Manrope,Arial,sans-serif);font-size:16px;line-height:1.65}.ds-card-heading{margin-bottom:24px}.ds-card h3{margin:0;color:var(--ink,#182b25);font-family:var(--display-font,\"Manrope\",Arial,sans-serif);font-size:22px;font-weight:700;line-height:1.25;letter-spacing:-.025em}.ds-card p{margin:0;color:var(--muted,#52645a)}.ds-card-heading p{margin-top:8px;font-size:14px}"
     },
     {
       "name": "Selected Project Choice",
       "kind": "custom",
       "refersTo": "choice-card-selected",
-      "description": "Implemented choice-card treatment: a warmed ground, terracotta edge, and visible radio indicator.",
+      "description": "Implemented choice-card treatment: a warmed ground, forest edge, and visible radio indicator.",
       "html": "<button class=\"ds-choice\" type=\"button\" aria-pressed=\"true\"><span class=\"ds-choice-radio\" aria-hidden=\"true\"></span><strong>Build a new home</strong><small>Plan the construction budget for your home.</small></button>",
-      "css": ".ds-choice{position:relative;min-width:0;min-height:148px;width:100%;padding:20px 18px;border:1px solid var(--control-border,#8e8073);border-radius:12px;background:var(--surface,#fffcf7);color:var(--ink,#352a24);font-family:var(--body-font,Lato,Arial,sans-serif);text-align:left;cursor:pointer;transition:background-color 160ms ease,color 160ms ease,border-color 160ms ease;}.ds-choice strong{display:block;margin-right:10px;color:var(--ink,#352a24);font-size:14px;font-weight:700;line-height:1.5}.ds-choice small{display:block;margin-top:4px;color:var(--muted,#6d6056);font-size:14px;font-weight:400;line-height:1.6}.ds-choice:hover{border-color:var(--terracotta,#9d4635)}.ds-choice[aria-pressed=\"true\"]{border-color:var(--terracotta,#9d4635);background:#faf0e7}.ds-choice:focus-visible{outline:3px solid var(--focus,#9d4635);outline-offset:4px;}.ds-choice-radio{position:absolute;top:18px;right:17px;width:16px;height:16px;border:1px solid var(--control-border,#8e8073);border-radius:50%;background:var(--surface,#fffcf7)}.ds-choice[aria-pressed=\"true\"] .ds-choice-radio{border-color:var(--terracotta,#9d4635);background:var(--terracotta,#9d4635)}.ds-choice[aria-pressed=\"true\"] .ds-choice-radio:after{content:\"\";position:absolute;top:4px;left:4px;width:6px;height:6px;border-radius:50%;background:#fff}@media(prefers-reduced-motion:reduce){.ds-choice{transition:none}}"
+      "css": ".ds-choice{position:relative;min-width:0;min-height:148px;width:100%;padding:20px 18px;border:1px solid var(--control-border,#798b80);border-radius:12px;background:var(--surface,#ffffff);color:var(--ink,#182b25);font-family:var(--body-font,Manrope,Arial,sans-serif);text-align:left;cursor:pointer;transition:background-color 160ms ease,color 160ms ease,border-color 160ms ease;}.ds-choice strong{display:block;margin-right:10px;color:var(--ink,#182b25);font-size:14px;font-weight:700;line-height:1.5}.ds-choice small{display:block;margin-top:4px;color:var(--muted,#52645a);font-size:14px;font-weight:400;line-height:1.6}.ds-choice:hover{border-color:var(--accent,#24634b)}.ds-choice[aria-pressed=\"true\"]{border-color:var(--accent,#24634b);background:#edf4ee}.ds-choice:focus-visible{outline:3px solid var(--focus,#24634b);outline-offset:4px;}.ds-choice-radio{position:absolute;top:18px;right:17px;width:16px;height:16px;border:1px solid var(--control-border,#798b80);border-radius:50%;background:var(--surface,#ffffff)}.ds-choice[aria-pressed=\"true\"] .ds-choice-radio{border-color:var(--accent,#24634b);background:var(--accent,#24634b)}.ds-choice[aria-pressed=\"true\"] .ds-choice-radio:after{content:\"\";position:absolute;top:4px;left:4px;width:6px;height:6px;border-radius:50%;background:#fff}@media(prefers-reduced-motion:reduce){.ds-choice{transition:none}}"
     },
     {
       "name": "Explained Reference Budget",
       "kind": "custom",
-      "description": "Home quick-estimate summary with tabular amounts and ruled total. Placeholders represent the implemented unavailable-value state.",
-      "html": "<div class=\"ds-budget\" aria-live=\"polite\"><div><span>Construction</span><strong>—</strong></div><div><span>10% contingency</span><strong>—</strong></div><div class=\"ds-budget-total\"><span>Reference total</span><strong>—</strong></div></div>",
-      "css": ".ds-budget{margin-top:28px;padding-top:18px;border-top:1px solid var(--border,#d3c8bb);color:var(--ink,#352a24);font-family:var(--body-font,Lato,Arial,sans-serif);font-size:17px;line-height:1.4;font-variant-numeric:tabular-nums}.ds-budget>div{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:7px 0}.ds-budget strong{font-size:20px;font-weight:400;white-space:nowrap}.ds-budget .ds-budget-total{margin-top:14px;padding-top:16px;border-top:1px solid var(--border,#d3c8bb);font-weight:700}.ds-budget-total strong{font-size:21px;font-weight:700}"
+      "description": "Home quick-estimate summary with tabular amounts and a forest total band. Placeholders represent unavailable values.",
+      "html": "<div class=\"ds-budget\" aria-live=\"polite\"><div><span>Construction</span><strong>\u2014</strong></div><div><span>10% contingency</span><strong>\u2014</strong></div><div class=\"ds-budget-total\"><span>Reference total</span><strong>\u2014</strong></div></div>",
+      "css": ".ds-budget{font-family:var(--body-font,Manrope,Arial,sans-serif);font-size:14px;line-height:1.5;font-variant-numeric:tabular-nums}.ds-budget>div{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:8px 0;color:var(--muted,#52645a)}.ds-budget strong{font-size:17px;font-weight:600;white-space:nowrap;color:var(--ink,#182b25)}.ds-budget .ds-budget-total{margin-top:16px;padding:18px 16px;border-radius:8px;background:var(--accent,#24634b);color:white;font-weight:600}.ds-budget-total strong{font-size:clamp(20px,1.9vw,26px);font-weight:800;color:white}"
     },
     {
       "name": "Planning Tool Link",
       "kind": "custom",
-      "description": "Home tool entry with a line icon, a useful description, and an outlined arrow that fills on hover.",
+      "description": "Home tool entry with a forest line icon, useful description, and rounded arrow that fills and moves on hover.",
       "html": "<button class=\"ds-tool\" type=\"button\"><svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"4\" y=\"2\" width=\"16\" height=\"20\" rx=\"2\"/><path d=\"M8 6h8M8 10h2m4 0h2M8 14h2m4 0h2M8 18h2m4 0h2\"/></svg><span><strong>Estimator</strong><span>Get a reference budget based on your location, size, and finish level.</span></span><svg class=\"ds-tool-arrow\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14m-7-7 7 7-7 7\"/></svg></button>",
-      "css": ".ds-tool{display:grid;grid-template-columns:30px minmax(0,1fr) 28px;gap:18px;align-items:start;min-width:0;padding:5px 0 7px;border:0;background:transparent;color:var(--ink,#352a24);font-family:var(--body-font,Lato,Arial,sans-serif);text-align:left;cursor:pointer;transition:background-color 160ms ease,color 160ms ease,border-color 160ms ease;}.ds-tool>svg:first-child{color:#50543b;flex-shrink:0}.ds-tool>span>strong{display:block;margin-bottom:9px;font-size:16px;font-weight:700;line-height:1.35}.ds-tool>span>span{display:block;color:var(--muted,#6d6056);font-size:14px;line-height:1.45}.ds-tool-arrow{align-self:center;width:32px;height:32px;padding:6px;border:1px solid #9c8e81;border-radius:50%}.ds-tool:hover .ds-tool-arrow{background:var(--terracotta,#9d4635);color:#fff;border-color:var(--terracotta,#9d4635)}.ds-tool:focus-visible{outline:3px solid var(--focus,#9d4635);outline-offset:4px;}@media(prefers-reduced-motion:reduce){.ds-tool{transition:none}}"
+      "css": ".ds-tool{display:grid;grid-template-columns:32px minmax(0,1fr) 32px;gap:20px;align-items:center;min-width:0;padding:20px 0;border:0;background:transparent;color:var(--ink,#182b25);font-family:var(--body-font,Manrope,Arial,sans-serif);text-align:left;cursor:pointer;transition:background-color 160ms ease,color 160ms ease,border-color 160ms ease;}.ds-tool>svg:first-child{color:#24634b;flex-shrink:0}.ds-tool>span>strong{display:block;margin-bottom:6px;font-size:17px;font-weight:700;line-height:1.35}.ds-tool>span>span{display:block;color:var(--muted,#52645a);font-size:14px;line-height:1.6;max-width:50ch}.ds-tool-arrow{align-self:center;width:32px;height:32px;padding:6px;border:0;border-radius:6px;color:var(--accent,#24634b);transition:transform 180ms ease,background-color 180ms ease}.ds-tool:hover .ds-tool-arrow{background:var(--accent,#24634b);color:#fff;border-color:var(--accent,#24634b);transform:translateX(3px)}.ds-tool:focus-visible{outline:3px solid var(--focus,#24634b);outline-offset:4px;}@media(prefers-reduced-motion:reduce){.ds-tool{transition:none}}@media(prefers-reduced-motion:reduce){.ds-tool-arrow{transition:none}}"
     }
   ],
   "narrative": {
-    "northStar": "Planning journal",
-    "overview": "Budget Build makes early home planning feel welcoming and easy to understand. Warm paper, cocoa text, terracotta actions, and editorial headings give the tools the character of a personal build notebook. Readable fields and explained figures keep the experience practical.\n\nThe material language is restrained: clean rules, flat surfaces, and modestly rounded controls. The journal metaphor comes from typography and document-like grouping; artificial paper grain and notebook doodles are excluded by the approved direction. Preserve the name Budget Build while continuing the clearly different identity selected to replace the former navy-and-amber look.\n\nThis Scan-mode record describes implemented CSS and components. The local Impeccable launcher was unavailable; review was manual, with no automatic design metrics or certification claims. The homepage's composition and image direction remain in [.impeccable/surfaces/home.md](.impeccable/surfaces/home.md).",
+    "northStar": "Modular Block",
+    "overview": "BuildBudget gives early home planning a clear, grounded identity. Forest actions, warm paper, white working surfaces, and ink text support a confident, readable interface. Manrope ties headings, controls, explanations, and figures together.\n\nThe approved concept B replaces the earlier terracotta and serif identity. The vector lockup in `public/brand-logo.svg` combines the modular mark with outlined DejaVu Sans Bold lettering; it requires no browser font for its wordmark. `BrandMark.tsx` reuses it in the header, footer, and account dialog. Compact modular assets serve the browser/app icon, and PDF reports carry the brand.\n\nThis record describes implemented CSS. Impeccable's launcher and detector are unavailable; screenshot review is manual, with no automated visual certification. Homepage composition belongs in `.impeccable/surfaces/home.md`.",
     "keyCharacteristics": [
-      "Warm paper and cocoa foundations.",
-      "Terracotta actions with quiet olive support.",
-      "Editorial serif headings and readable sans-serif controls.",
-      "Flat, ruled groups and tangible outlined fields.",
-      "Explained reference budgets and plain homeowner language."
+      "Forest actions and selection with warm paper and white foundations.",
+      "Manrope throughout the live interface.",
+      "Modular vector identity and restrained rounded geometry.",
+      "Flat surfaces, visible outlines, and explained tabular figures.",
+      "Plain homeowner language and visible demonstration assumptions."
     ],
     "rules": [
       {
         "name": "The Action Color Rule",
-        "body": "Use terracotta for actions, selection, and focus. Use olive for supporting planning information rather than competing primary actions.",
+        "body": "Use forest for action, selection, and focus; keep explicit labels and indicators alongside color.",
         "section": "colors"
       },
       {
         "name": "The Number Clarity Rule",
-        "body": "Use the sans serif and tabular numerals for monetary totals and comparisons. Keep explanations adjacent to the numbers they qualify.",
+        "body": "Keep explanations adjacent to the figures they qualify and use tabular numerals for comparisons.",
         "section": "typography"
       },
       {
         "name": "The Flat Surface Rule",
-        "body": "Use tonal surfaces and borders to distinguish groups. Preserve the shadow-free material language of Planning journal.",
+        "body": "Distinguish working groups with surfaces and borders while preserving the implemented shadow-free treatment.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "**Do** pair warm paper and cocoa foundations with terracotta actions and quiet olive support.",
-      "**Do** use Libre Caslon Text for editorial headings and Lato for controls, explanations, and amounts.",
-      "**Do** use flat surfaces, thin rules, and outlined fields to make project details easy to scan.",
-      "**Do** preserve visible focus, readable field labels, explicit selection indicators, and recovery states.",
-      "**Do** label preliminary figures and demonstration assumptions alongside their amounts.",
-      "**Do** keep generated architectural imagery identified as illustration rather than a built client project."
+      "**Do** use the approved Modular Block assets and BuildBudget spelling.",
+      "**Do** pair forest actions with warm paper, white surfaces, and Manrope.",
+      "**Do** preserve readable labels, visible focus, explicit selection, and recovery states.",
+      "**Do** explain demonstration assumptions alongside reference figures.",
+      "**Do** identify generated architectural imagery as illustration."
     ],
     "donts": [
-      "**Don't** restore the former navy-and-amber palette or building badge. Use the terracotta BB monogram created for the planning journal identity.",
-      "**Don't** add artificial paper grain or notebook doodles to express the journal metaphor.",
-      "**Don't** replace the observed flat material language with decorative shadows.",
-      "**Don't** use color alone to communicate selection, errors, or budget status.",
-      "**Don't** promote the homepage composition into a mandatory layout for every surface.",
-      "**Don't** invent customer proof, verified market-rate claims, or automated design certification."
+      "**Don't** restore the superseded terracotta initials or serif identity.",
+      "**Don't** use color alone for errors, selection, or budget status.",
+      "**Don't** impose the homepage composition on every workspace screen.",
+      "**Don't** invent customer proof, verified market prices, or automated design certification."
     ]
   }
 }

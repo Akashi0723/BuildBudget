@@ -1,77 +1,78 @@
 ---
-name: Budget Build
-description: Welcoming homeowner planning in a warm personal build notebook.
+name: BuildBudget
+description: Clear homeowner planning with the approved Modular Block identity.
 colors:
-  paper: "#f6f1e8"
-  surface: "#fffcf7"
-  ink: "#352a24"
-  muted: "#6d6056"
-  border: "#d3c8bb"
-  control-border: "#8e8073"
-  terracotta: "#9d4635"
-  terracotta-hover: "#843a2c"
-  terracotta-soft: "#efe0d6"
-  olive: "#68715b"
-  olive-soft: "#e9ecdf"
+  paper: "#f5f3ed"
+  surface: "#ffffff"
+  ink: "#182b25"
+  muted: "#52645a"
+  border: "#d6ddd4"
+  control-border: "#798b80"
+  accent: "#24634b"
+  accent-hover: "#1b4e3b"
+  accent-soft: "#e4eee5"
+  forest: "#24634b"
+  forest-soft: "#e4eee5"
   white: "#fff"
-  hover-paper: "#eee6db"
-  selected-paper: "#faf0e7"
-  selected-ink: "#803b2d"
+  hover-paper: "#e9eee6"
+  selected-paper: "#edf4ee"
+  selected-ink: "#24634b"
 typography:
   display:
-    fontFamily: "'Libre Caslon Text', Georgia, serif"
-    fontSize: "clamp(54px, 5.47vw, 84px)"
-    fontWeight: 700
-    lineHeight: 0.98
+    fontFamily: "'Manrope', Arial, sans-serif"
+    fontSize: "clamp(48px, 5vw, 72px)"
+    fontWeight: 800
+    lineHeight: 1.06
     letterSpacing: "-0.04em"
   headline:
-    fontFamily: "'Libre Caslon Text', Georgia, serif"
+    fontFamily: "'Manrope', Arial, sans-serif"
     fontSize: "40px"
-    fontWeight: 700
+    fontWeight: 800
     lineHeight: 1.25
     letterSpacing: "-0.025em"
   section:
-    fontFamily: "'Libre Caslon Text', Georgia, serif"
+    fontFamily: "'Manrope', Arial, sans-serif"
     fontSize: "32px"
-    fontWeight: 700
+    fontWeight: 800
     lineHeight: 1.25
     letterSpacing: "-0.025em"
   title:
-    fontFamily: "'Libre Caslon Text', Georgia, serif"
+    fontFamily: "'Manrope', Arial, sans-serif"
     fontSize: "22px"
     fontWeight: 700
     lineHeight: 1.25
     letterSpacing: "-0.025em"
   body:
-    fontFamily: "'Lato', Arial, sans-serif"
+    fontFamily: "'Manrope', Arial, sans-serif"
     fontSize: "16px"
     fontWeight: 400
     lineHeight: 1.65
   label:
-    fontFamily: "'Lato', Arial, sans-serif"
+    fontFamily: "'Manrope', Arial, sans-serif"
     fontSize: "14px"
     fontWeight: 700
     lineHeight: 1.65
   button:
-    fontFamily: "'Lato', Arial, sans-serif"
+    fontFamily: "'Manrope', Arial, sans-serif"
     fontSize: "16px"
     fontWeight: 700
     lineHeight: 1.4
   badge:
-    fontFamily: "'Lato', Arial, sans-serif"
+    fontFamily: "'Manrope', Arial, sans-serif"
     fontSize: "12px"
     fontWeight: 700
     lineHeight: 1.5
   amount:
-    fontFamily: "'Lato', Arial, sans-serif"
-    fontSize: "clamp(36px, 3.2vw, 52px)"
-    fontWeight: 700
-    lineHeight: 1.15
-    letterSpacing: "-0.03em"
+    fontFamily: "'Manrope', Arial, sans-serif"
+    fontSize: "clamp(20px, 1.9vw, 26px)"
+    fontWeight: 800
+    lineHeight: 1.5
 rounded:
   badge: "4px"
   control: "6px"
   panel: "12px"
+  home-control: "8px"
+  home-panel: "16px"
   round: "50%"
 spacing:
   "8": "8px"
@@ -83,13 +84,13 @@ spacing:
   "32": "32px"
 components:
   button-primary:
-    backgroundColor: "{colors.terracotta}"
+    backgroundColor: "{colors.accent}"
     textColor: "{colors.white}"
     typography: "{typography.button}"
     rounded: "{rounded.control}"
     padding: "12px 20px"
   button-primary-hover:
-    backgroundColor: "{colors.terracotta-hover}"
+    backgroundColor: "{colors.accent-hover}"
   button-secondary:
     backgroundColor: "transparent"
     textColor: "{colors.ink}"
@@ -100,10 +101,10 @@ components:
     backgroundColor: "{colors.hover-paper}"
   button-text:
     backgroundColor: "transparent"
-    textColor: "{colors.terracotta}"
+    textColor: "{colors.accent}"
     padding: "10px 0"
   button-text-hover:
-    textColor: "{colors.terracotta-hover}"
+    textColor: "{colors.accent-hover}"
   field:
     backgroundColor: "{colors.surface}"
     textColor: "{colors.ink}"
@@ -129,153 +130,123 @@ components:
   choice-card-selected:
     backgroundColor: "{colors.selected-paper}"
   navigation-selected:
-    backgroundColor: "{colors.terracotta-soft}"
+    backgroundColor: "{colors.accent-soft}"
     textColor: "{colors.selected-ink}"
     rounded: "{rounded.control}"
     padding: "12px"
 ---
 
-# Design System: Budget Build
+# Design System: BuildBudget
 
 ## Overview
 
-**Creative North Star: "Planning journal"**
+**Creative North Star: "Modular Block"**
 
-Budget Build makes early home planning feel welcoming and easy to understand. Warm paper, cocoa text, terracotta actions, and editorial headings give the tools the character of a personal build notebook. Readable fields and explained figures keep the experience practical.
+BuildBudget gives early home planning a clear, grounded identity. Forest actions, warm paper, white working surfaces, and ink text support a confident, readable interface. Manrope ties headings, controls, explanations, and figures together.
 
-The material language is restrained: clean rules, flat surfaces, and modestly rounded controls. The journal metaphor comes from typography and document-like grouping; artificial paper grain and notebook doodles are excluded by the approved direction. Preserve the name Budget Build while continuing the clearly different identity selected to replace the former navy-and-amber look.
+The approved concept B replaces the earlier terracotta and serif identity. The vector lockup in `public/brand-logo.svg` combines the modular mark with outlined DejaVu Sans Bold lettering; it requires no browser font for its wordmark. `BrandMark.tsx` reuses it in the header, footer, and account dialog. Compact modular assets serve the browser/app icon, and PDF reports carry the brand.
 
-This Scan-mode record describes implemented CSS and components. The local Impeccable launcher was unavailable; review was manual, with no automatic design metrics or certification claims. The homepage's composition and image direction remain in [.impeccable/surfaces/home.md](.impeccable/surfaces/home.md).
+This record describes implemented CSS. Impeccable's launcher and detector are unavailable; screenshot review is manual, with no automated visual certification. Homepage composition belongs in `.impeccable/surfaces/home.md`.
 
 **Key Characteristics:**
 
-- Warm paper and cocoa foundations.
-- Terracotta actions with quiet olive support.
-- Editorial serif headings and readable sans-serif controls.
-- Flat, ruled groups and tangible outlined fields.
-- Explained reference budgets and plain homeowner language.
-
-The wordmark reads **Budget Build**, without a PH suffix. Each word begins with the same oversized terracotta vector B from the BB monogram, followed by cocoa Caslon “udget” or “uild” on a shared baseline. `public/brand-initial.svg` is reused twice by `BrandMark.tsx` in the header, footer, and account dialog. The full BB mark in `public/brand-mark.svg` and `src/app/icon.svg` remains the compact icon. Keep the lettering unframed, unanimated, and proportional; the accessible wordmark name is “Budget Build”.
+- Forest actions and selection with warm paper and white foundations.
+- Manrope throughout the live interface.
+- Modular vector identity and restrained rounded geometry.
+- Flat surfaces, visible outlines, and explained tabular figures.
+- Plain homeowner language and visible demonstration assumptions.
 
 ## Colors
 
-The palette feels warm and grounded, with terracotta marking action and olive supporting planning information. The frontmatter is the normative color inventory; source custom properties live in `src/app/globals.css`. The sidecar's synthesized OKLCH tonal ramps are preview aids, not additional implemented color tokens.
+The frontmatter records implemented reusable colors from `src/app/globals.css`; sidecar tonal ramps are synthesized preview aids, not shipping tokens.
 
 ### Primary
 
-- **Terracotta** supplies primary buttons, action links, active navigation, caret color, and focus outlines. **Deep Terracotta** is its hover state.
-- **Soft Terracotta** marks selected navigation and recommendations. **Selected Terracotta Ink** supplies their stronger text. **Selected Paper** lightly warms selected choice and finish cards.
-
-### Secondary
-
-- **Quiet Olive** supports informational icons and small status marks.
-- **Soft Olive** distinguishes planning notes, optimizer callouts, and within-budget messages. Status panels carry explicit wording as well as color.
+Forest supplies primary actions, links, focus, active navigation, and the homepage reference total. Deep Forest supplies hover feedback. Soft Forest distinguishes selected navigation and supporting planning information. Selected Paper gives chosen options a lighter ground.
 
 ### Neutral
 
-- **Warm Paper** is the page ground; **Clean Paper** is the brighter field and panel surface.
-- **Deep Cocoa** carries headings and primary information; **Muted Cocoa** carries supporting copy.
-- **Paper Rule** separates groups. **Control Outline** gives editable fields and outlined actions a stronger edge.
-- **Hover Paper** warms secondary controls and navigation on hover. **White** supplies text against terracotta actions.
+Warm Paper grounds pages; White forms the working surfaces. Ink carries primary text and Muted Green carries explanations. Planning Rule divides groups; Control Outline identifies editable fields. Hover Paper supports secondary states. Legacy CSS aliases named navy, orange, green, and cream resolve to this current palette.
 
-**The Action Color Rule.** Use terracotta for actions, selection, and focus. Use olive for supporting planning information rather than competing primary actions.
+**The Action Color Rule.** Use forest for action, selection, and focus; keep explicit labels and indicators alongside color.
 
 ## Typography
 
-**Display Font:** Libre Caslon Text, with Georgia and serif fallbacks.
+**Display Font:** Manrope, with Arial and sans-serif fallbacks.
 
-**Body Font:** Lato, with Arial and sans-serif fallbacks.
+**Body Font:** Manrope, with Arial and sans-serif fallbacks.
 
-Both families are self-hosted in `public/fonts/` at normal weights (400 and 700), with `font-display: swap`. Their SIL Open Font Licenses are included. See `src/app/fonts.css` and `public/fonts/README.md` for the exact assets.
-
-The serif gives headings an editorial, personal character; the sans serif makes inputs, amounts, and instructions easy to scan. The observed hierarchy is role-based rather than a fixed mathematical scale.
+Normal Latin weights (400/500/600/700/800) are self-hosted with `font-display: swap`; `public/fonts/Manrope-LICENSE.txt` contains the license. Logo lettering is outlined vector artwork, independent of the UI font.
 
 ### Hierarchy
 
-- **Display:** the responsive homepage introduction. Its specific responsive variants belong to the home surface.
-- **Headline:** general page titles; narrower workspace titles step down to (34px), then (32px).
-- **Section:** general section headings. Shared panel headings often use (28px); smaller screens use (26px).
-- **Title:** small section and result-summary headings.
-- **Body:** explanations and reading copy; general mobile body copy becomes (14px) below the phone breakpoint. Page introductions use a maximum measure of (75ch); wizard introductions use (65ch).
-- **Label:** bold field labels and compact functional text, normally sentence case.
-- **Button:** readable action labels. Shared buttons become (14px) on phones; larger surface-specific actions retain their own sizing.
-- **Badge:** compact status labels.
-- **Amount:** important totals use Lato with tabular numerals. The same numeric treatment aligns breakdown and comparison rows.
+- **Display:** bold homepage introduction; responsive variants belong to the home surface.
+- **Headline / Section / Title:** shared page and panel hierarchy uses weight (700), with observed panel and mobile variants.
+- **Body:** readable explanations, generally (16px), with (65–75ch) limits for longer introductions.
+- **Label / Button / Badge:** visible functional labels; home labels use weight (600), shared labels use (700).
+- **Amount:** the home total uses weight (800); other results retain their observed sizes. Tabular numerals align monetary comparisons.
 
-**The Number Clarity Rule.** Use the sans serif and tabular numerals for monetary totals and comparisons. Keep explanations adjacent to the numbers they qualify.
+**The Number Clarity Rule.** Keep explanations adjacent to the figures they qualify and use tabular numerals for comparisons.
 
 ## Layout
 
-Shared public and workspace frames cap at (1536px); reading pages cap at (1250px). The desktop workspace uses a (224px) sidebar and a flexible content area with `min-width: 0`. General page gutters move from (50px) through (32px) and (24px) to (20px); narrow workspace content uses (16px). The shared header is (70px), reducing to (64px) on phones.
+Shared public and workspace frames cap at (1536px); reading pages cap at (1250px). The desktop workspace pairs a (224px) sidebar with flexible content. The shared header is (88px), reducing to (64px) at the phone breakpoint. Gutters generally move from (50px) to (32px), (24px), and (20px); narrow workspace content uses (16px).
 
-The extracted spacing steps are repeated measurements in CSS, not an existing named custom-property scale. Typical grids use (20px–24px) gaps and panels use (28px) padding, reducing to (24px) and (22px 18px). Rules group assumptions, actions, and result rows without adding nested containers.
-
-Navigation changes at (999px): the desktop sidebar and public links give way to the header menu and horizontally scrollable workspace controls. Several working grids stack at (760px); fields, choices, and finish options stack at (560px). Additional observed breakpoints and the home surface's specific changes are recorded in the sidecar. Do not apply the homepage split or fixed rows to unrelated screens.
+Navigation collapses at (999px). Working grids stack at (760px), while fields and choice groups stack at (560px). Spacing tokens summarize repeated CSS measurements rather than named source custom properties. The homepage's split composition and asymmetric tool list are surface-specific.
 
 ## Elevation & Depth
 
-The implemented system uses no box shadows. Depth comes from the Warm Paper/Clean Paper distinction, soft terracotta or olive state surfaces, and thin rules. Buttons and fields remain tangible through their contrasting fills and stronger outlines. Focus uses a terracotta outline (3px) with an offset (4px); grouped input wrappers use an offset (3px).
+No box shadows are implemented. Warm Paper, White, forest state fills, and thin rules establish grouping. Focus uses a forest outline (3px) with offset (4px); grouped fields use offset (3px). Shared controls transition color and border (160ms, ease). Loading spins at (900ms, linear); home arrows move horizontally with (180ms, ease). Reduced-motion queries disable animation and transitions.
 
-**The Flat Surface Rule.** Use tonal surfaces and borders to distinguish groups. Preserve the shadow-free material language of Planning journal.
-
-Motion is limited to color and border transitions (160ms, ease) and a loading spinner (900ms, linear). The implemented reduced-motion query disables animation and transitions.
+**The Flat Surface Rule.** Distinguish working groups with surfaces and borders while preserving the implemented shadow-free treatment.
 
 ## Shapes
 
-Controls and navigation have gently curved corners; larger panels and choice cards are slightly softer. Compact badges use the smaller corner treatment. Thin borders (1px) recur throughout fields, panels, selected options, and ruled summaries. Circular forms belong to radio indicators, avatars, progress markers, and the small arrow affordance on home tool links. The architectural image uses a plain clipped plate on the homepage; other planning imagery sits in rounded containers.
+Shared controls use modest corners (6px); panels and choices use softer corners (12px); badges use (4px). The homepage has field/total corners (8px) and a quick-estimate panel (16px). Thin outlines (1px) recur throughout. Circles identify radios, avatars, and progress; the modular mark remains proportional and unframed.
 
 ## Components
 
 ### Buttons
 
-Direct and readable. Primary buttons use terracotta with white text; secondary buttons use a transparent paper ground, cocoa text, and Control Outline. The common padding is in the frontmatter, with a minimum target height (44px). Large actions use a minimum height (52px) and padding (14px 24px).
-
-Primary hover deepens terracotta. Secondary hover warms the background and darkens the border. Text buttons use terracotta, a minimum height (44px), and a deeper hover color. All keyboard-operable actions keep the shared visible focus outline. Disabled buttons use opacity (.55) and a not-allowed cursor; hover treatments exclude disabled states where implemented.
+Readable primary actions use Forest and White with padding (12px 20px), minimum height (44px), and shared control corners. Large actions use minimum height (52px). Hover deepens forest; outlined alternatives use Control Outline and Hover Paper. Text actions use forest. Disabled controls use opacity (.55) and a not-allowed cursor. Keep visible keyboard focus.
 
 ### Chips
 
-The implemented compact chip is an informational badge, not a filter control. It uses Warm Paper, Muted Cocoa, and Paper Rule. Recommended planner badges use Soft Terracotta and Selected Terracotta Ink. Do not give static status labels interactive states.
+Static informational badges use Warm Paper, Muted Green, and Planning Rule. Recommended labels use Soft Forest. Status labels do not acquire interactive behavior.
 
 ### Cards / Containers
 
-Flat, document-like groups. Shared cards use Clean Paper, Paper Rule, and the panel corner treatment. Titles are serif; supporting copy is sans serif. Results, planner notes, and status callouts may use the observed warm or olive tonal surfaces. Cards do not lift on hover.
-
-Choice and finish cards are interactive outlined options. Hover changes the outline to terracotta; selection also warms the ground to Selected Paper and reveals a radio or check indicator. Keep the state indicator and label together.
+White shared panels use Planning Rule, panel corners, and padding (28px). Manrope headings and explanations preserve a clear hierarchy. Choice and finish cards change their border to forest on hover; selected options add Selected Paper and an explicit radio or check indicator.
 
 ### Inputs / Fields
 
-Clearly editable, with visible labels. Shared fields use Clean Paper, Control Outline, control corners, and a height (48px). Text is (16px), even where surrounding mobile copy is smaller. The homepage's quick inputs use a height (46px), becoming (50px) when stacked.
-
-Hover darkens the field edge; keyboard focus uses the shared outline. Grouped currency and unit fields put the focus treatment on their wrapper and separate units with a rule. Disabled fields use a muted warm ground. Errors use a warm terracotta tint, outlined message, clear text, and a recovery action when available; preserve `aria-invalid`, descriptions, and live feedback.
+Shared labeled fields use White, Control Outline, height (48px), and padding (10px 13px). Home fields use height (50px) and home-control corners. Input text remains (16px). Focus remains visible on inputs or grouped wrappers. Disabled fields use Hover Paper. Existing error panels retain their semantic reddish treatment, descriptive text, and recovery action; preserve invalid-state descriptions and live feedback.
 
 ### Navigation
 
-Public links use plain sans-serif text with terracotta hover. Active public links add a thin underline. Workspace navigation uses soft terracotta behind the selected item, stronger selected text, and an icon; hover uses Hover Paper. The mobile header menu preserves the same selected-state language. Shared menu items have a minimum height (48px).
+Public navigation uses plain text with forest hover and a thin active underline. Workspace selection uses Soft Forest, stronger forest text, and an icon. Phone menus and scrollable workspace controls keep tool access reachable; menu rows retain minimum height (48px).
 
-### Explained budget rows
+### Explained reference budget
 
-Compact ruled summaries align labels on the left and tabular amounts on the right. A stronger total row follows a divider; no floating result card is required for this pattern. The home quick estimate shows a placeholder while values are unavailable, labels its demonstration assumptions, and exposes loading or recovery feedback. These behaviors support the number-clarity rule.
+The homepage pairs compact tabular construction and contingency rows with a Forest total band and white text. Changing inputs updates the existing server calculation. Unavailable values, loading, and recovery states remain explicit; demonstration assumptions stay adjacent.
 
 ### Planning tool links
 
-Home tool links combine a quiet olive line icon, bold title, explanatory copy, and a small outlined circular arrow. Hover fills the arrow with terracotta. Narrow layouts retain readable rows and separators. This component may be reused where a tool needs a short explanation; its homepage placement remains surface-specific.
+An asymmetric homepage list uses forest line icons, strong titles, descriptions, and a rounded arrow. Hover fills the arrow and moves it (3px) horizontally; reduced motion removes the transition. Preserve separators and readable stacked rows on phones.
 
 ## Do's and Don'ts
 
 ### Do:
 
-- **Do** pair warm paper and cocoa foundations with terracotta actions and quiet olive support.
-- **Do** use Libre Caslon Text for editorial headings and Lato for controls, explanations, and amounts.
-- **Do** use flat surfaces, thin rules, and outlined fields to make project details easy to scan.
-- **Do** preserve visible focus, readable field labels, explicit selection indicators, and recovery states.
-- **Do** label preliminary figures and demonstration assumptions alongside their amounts.
-- **Do** keep generated architectural imagery identified as illustration rather than a built client project.
+- **Do** use the approved Modular Block assets and BuildBudget spelling.
+- **Do** pair forest actions with warm paper, white surfaces, and Manrope.
+- **Do** preserve readable labels, visible focus, explicit selection, and recovery states.
+- **Do** explain demonstration assumptions alongside reference figures.
+- **Do** identify generated architectural imagery as illustration.
 
 ### Don't:
 
-- **Don't** restore the former navy-and-amber palette or building badge. Use the terracotta BB monogram created for the planning journal identity.
-- **Don't** add artificial paper grain or notebook doodles to express the journal metaphor.
-- **Don't** replace the observed flat material language with decorative shadows.
-- **Don't** use color alone to communicate selection, errors, or budget status.
-- **Don't** promote the homepage composition into a mandatory layout for every surface.
-- **Don't** invent customer proof, verified market-rate claims, or automated design certification.
+- **Don't** restore the superseded terracotta initials or serif identity.
+- **Don't** use color alone for errors, selection, or budget status.
+- **Don't** impose the homepage composition on every workspace screen.
+- **Don't** invent customer proof, verified market prices, or automated design certification.

@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#f6f1e8"/>
-  <g transform="translate(6 10) scale(1.08)" fill="none" stroke="#9d4635" stroke-width="3.2" stroke-linecap="square" stroke-linejoin="round">
-    <path d="M4 35V5h7c5 0 8 3 8 7.5S16 20 11 20H4m7 0c6 0 9 3 9 7.5S17 35 11 35H4"/>
-    <path d="M28 35V5h7c5 0 8 3 8 7.5S40 20 35 20h-7m7 0c6 0 9 3 9 7.5S41 35 35 35h-7"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img"><title>BuildBudget — Modular Block</title><rect width="256" height="256" rx="52" fill="#24634B"/><g fill="#FFFFFF" transform="translate(24 24) scale(.8125)"><path d="M88 24H232V104H168V72H88Z M24 88H88V168H152V232H24Z M168 120H232V232H168Z"/></g></svg>

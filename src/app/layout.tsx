@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import './fonts.css';
 import './globals.css';
 export const metadata: Metadata = {
-  title: 'Budget Build — Plan smart. Build with confidence.',
+  title: 'BuildBudget — Plan smart. Build with confidence.',
+  icons: { icon: '/favicon.svg', apple: '/apple-touch-icon.png' },
   description: 'Explore your Philippine construction budget with transparent preliminary estimates, planning tools, and saved project reports.',
 };
 export default function RootLayout({ children }: { children: React.ReactNode }) {

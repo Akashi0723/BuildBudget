@@ -68,6 +68,7 @@ export default function HomeDesk({ onStart, onUse, go }: Props) {
 
       <div className={styles.photo}>
         <Image src="/project-desk-house.png" alt="Illustrative two-storey tropical home with timber details and lush planting" width={1848} height={852} sizes="(max-width: 800px) 100vw, (max-width: 1200px) 60vw, (max-width: 1536px) 63vw, 968px" loading="eager" fetchPriority="high" />
+      <span className={styles.photoCaption}>A little inspiration for what comes next. <small>Illustrative home</small></span>
       </div>
 
       <form className={styles.estimate} onSubmit={event => { event.preventDefault(); if (ready) onUse({ ...input, city: '' }); }}>

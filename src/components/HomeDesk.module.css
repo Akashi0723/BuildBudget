@@ -1,113 +1,95 @@
 .desk {
-  max-width: 1536px;
+  max-width: 1440px;
   margin: 0 auto;
+  padding: 48px 50px 56px;
   display: grid;
-  grid-template-columns: minmax(0, 63%) minmax(0, 37%);
-  grid-template-rows: 350px 384px;
-  border-bottom: 1px solid var(--border);
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  grid-template-rows: auto 280px;
+  gap: 36px 56px;
 }
-.intro {
-  grid-column: 1;
-  grid-row: 1;
-  padding: 30px clamp(30px, 3.32vw, 51px) 24px;
+.intro { grid-column: 1; grid-row: 1; min-width: 0; padding-top: 12px; }
+.intro h1 {
+  font-family: var(--display-font);
+  font-size: clamp(48px, 5vw, 72px);
+  line-height: 1.06;
+  font-weight: 800;
+  letter-spacing: -.04em;
+  margin: 0 0 24px;
+}
+.intro > p { font-size: 18px; line-height: 1.65; color: var(--muted); max-width: 52ch; }
+.desktopBreak { display: none; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 28px; }
+.actions button { min-height: 52px; padding: 14px 20px; font-size: 15px; gap: 12px; }
+.photo { grid-column: 1; grid-row: 2; min-width: 0; overflow: hidden; border-radius: 12px; position: relative; }
+.photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 45%; }
+.photoCaption { position: absolute; bottom: 0; left: 0; right: 0; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding: 12px 16px; color: white; background: #182b25; font-size: 12px; }
+.photoCaption small { font-size: 11px; color: #cedbd1; }
+.estimate {
+  grid-column: 2; grid-row: 1 / 3; align-self: stretch;
+  padding: 32px; border-radius: 16px; background: var(--surface);
   min-width: 0;
 }
-.intro h1 {
-  font-family: 'Libre Caslon Text', Georgia, serif;
-  font-size: clamp(54px, 5.47vw, 84px);
-  line-height: .98;
-  font-weight: 700;
-  letter-spacing: -.04em;
-  text-wrap: initial;
-  margin: 0 0 8px;
-}
-.intro > p { font-size: clamp(17px, 1.37vw, 21px); line-height: 1.4; color: var(--ink); max-width: 630px; }
-.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin-top: 11px; }
-.actions button { min-height: 56px; padding: 14px 28px; font-size: 18px; gap: 20px; }
-.photo { grid-column: 1; grid-row: 2; min-width: 0; overflow: hidden; }
-.photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 45%; }
-.estimate {
-  grid-column: 2;
-  grid-row: 1 / 3;
-  align-self: stretch;
-  padding: 80px clamp(28px, 3.1vw, 48px) 30px;
-  position: relative;
-}
-.estimate::before { content: ''; position: absolute; left: 0; top: 34px; bottom: 0; width: 1px; background: var(--border); }
-.formIntro h2 { font-size: clamp(30px, 3.1vw, 48px); line-height: 1.2; letter-spacing: -.035em; white-space: nowrap; margin: 0 0 8px; }
-.formIntro p { font-size: 17px; line-height: 1.5; color: var(--ink); }
-.fields { display: grid; gap: 17px; margin-top: 30px; }
-.fields label { display: grid; gap: 7px; font-size: 16px; line-height: 1.4; }
-.fields select, .fields input { width: 100%; min-width: 0; height: 46px; border: 1px solid #8e8073; border-radius: 6px; background: var(--surface); color: var(--ink); padding: 10px 13px; font-size: 17px; }
+.formIntro h2 { font-size: clamp(27px, 2.4vw, 34px); line-height: 1.2; letter-spacing: -.03em; margin: 0 0 12px; }
+.formIntro p { font-size: 15px; line-height: 1.65; color: var(--muted); max-width: 38ch; }
+.fields { display: grid; gap: 18px; margin-top: 28px; }
+.fields label { display: grid; gap: 8px; font-size: 14px; font-weight: 600; line-height: 1.4; }
+.fields select, .fields input { width: 100%; min-width: 0; height: 50px; border: 1px solid var(--control-border); border-radius: 8px; background: var(--surface); color: var(--ink); padding: 10px 13px; font-size: 16px; font-weight: 500; }
 .fields select { cursor: pointer; }
+.fields select:hover, .fields input:hover { border-color: var(--accent); }
 .unitInput { position: relative; }
 .unitInput input { padding-right: 68px; }
 .unitInput span { position: absolute; inset: 1px 1px 1px auto; display: grid; place-items: center; min-width: 54px; color: var(--muted); border-left: 1px solid var(--border); pointer-events: none; }
-.summary { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--border); font-size: 17px; line-height: 1.4; font-variant-numeric: tabular-nums; }
-.summary > div { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 7px 0; }
-.summary strong { font-weight: 400; white-space: nowrap; font-size: 20px; }
-.summary .total { border-top: 1px solid var(--border); padding-top: 16px; margin-top: 14px; font-weight: 700; }
-.total strong { font-weight: 700; font-size: 21px; }
-.context { margin-top: 12px; }
-.context p { font-size: 13px; color: var(--muted); min-height: 22px; display: flex; align-items: center; gap: 6px; }
-.context .continue { display: inline-flex; align-items: center; gap: 10px; color: var(--terracotta); background: transparent; font-size: 14px; font-weight: 700; min-height: 44px; padding: 4px 0; }
+.summary { margin-top: 24px; font-size: 14px; line-height: 1.5; font-variant-numeric: tabular-nums; }
+.summary > div { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 8px 0; color: var(--muted); }
+.summary strong { font-weight: 600; white-space: nowrap; font-size: 17px; color: var(--ink); }
+.summary .total { padding: 18px 16px; margin-top: 16px; border-radius: 8px; background: var(--accent); color: white; font-weight: 600; }
+.total strong { font-weight: 800; font-size: clamp(20px, 1.9vw, 26px); color: white; }
+.context { margin-top: 16px; }
+.context p { font-size: 12px; color: var(--muted); min-height: 22px; display: flex; align-items: center; flex-wrap: wrap; gap: 6px; }
+.context .continue { display: inline-flex; align-items: center; gap: 10px; color: var(--accent); background: transparent; font-size: 14px; font-weight: 700; min-height: 44px; padding: 8px 0; margin-top: 8px; }
 .continue:hover:not(:disabled) { text-decoration: underline; text-underline-offset: 4px; }
-.tools { max-width: 1536px; padding: 33px clamp(30px, 3.32vw, 51px) 36px; margin: 0 auto; display: grid; grid-template-columns: 1.65fr 1fr 1fr 1fr; align-items: start; gap: 26px; }
-.toolsIntro h2 { font-size: clamp(29px, 2.85vw, 44px); line-height: 1.25; letter-spacing: -.035em; margin-bottom: 8px; white-space: nowrap; }
-.toolsIntro p { font-size: 16px; line-height: 1.5; color: var(--ink); max-width: 37ch; }
-.toolLink { display: grid; grid-template-columns: 30px minmax(0,1fr) 28px; gap: 18px; align-items: start; padding: 5px 0 7px; background: transparent; text-align: left; min-width: 0; color: var(--ink); position: relative; }
-.toolLink + .toolLink::before { position: absolute; content: ''; left: -13px; top: 0; bottom: 0; background: var(--border); width: 1px; }
-.toolLink > svg:first-child { color: #50543b; }
-.toolLink > span > strong { font-size: 16px; font-weight: 700; display: block; line-height: 1.35; margin-bottom: 9px; }
-.toolLink > span > span { display: block; font-size: 14px; color: var(--muted); line-height: 1.45; }
-.toolArrow { border: 1px solid #9c8e81; border-radius: 50%; width: 32px; height: 32px; padding: 6px; align-self: center; }
-.toolLink:hover .toolArrow { background: var(--terracotta); color: white; border-color: var(--terracotta); }
-@media (min-width: 1600px) { .desk { border-right: 1px solid var(--border); border-left: 1px solid var(--border); } }
-@media (max-width: 1200px) {
-  .desk { grid-template-columns: minmax(0,60%) minmax(0,40%); grid-template-rows: 340px 350px; }
-  .intro { padding-left: 32px; padding-right: 24px; }
-  .intro h1 { font-size: clamp(50px, 5.45vw, 65px); margin-bottom: 18px; }
-  .actions { gap: 10px; margin-top: 17px; }
-  .actions button { padding: 12px 18px; font-size: 15px; gap: 12px; }
-  .desktopBreak { display: none; }
-  .estimate { padding: 40px 28px 25px; }
-  .fields { margin-top: 22px; gap: 14px; }
-  .formIntro h2 { font-size: 34px; }
-  .tools { grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 20px; padding-left: 32px; padding-right: 32px; }
-  .toolsIntro h2 { white-space: normal; font-size: 30px; }
-  .toolLink { grid-template-columns: 24px minmax(0,1fr); gap: 12px; }
-  .toolLink > svg:first-child { width: 24px; height: 24px; }
-  .toolArrow { display: none; }
+.tools { max-width: 1340px; padding: 40px 0; margin: 0 auto; border-top: 1px solid var(--border); display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.2fr); column-gap: 80px; align-items: start; }
+.toolsIntro { grid-column: 1; grid-row: 1 / 4; padding: 16px 0; }
+.toolsIntro h2 { font-size: clamp(29px, 2.85vw, 40px); line-height: 1.2; letter-spacing: -.035em; margin-bottom: 16px; }
+.toolsIntro p { font-size: 16px; line-height: 1.6; max-width: 35ch; }
+.toolLink { grid-column: 2; display: grid; grid-template-columns: 32px minmax(0,1fr) 32px; gap: 20px; align-items: center; padding: 20px 0; background: transparent; text-align: left; min-width: 0; color: var(--ink); }
+.toolLink + .toolLink { border-top: 1px solid var(--border); }
+.toolLink > svg:first-child { color: var(--accent); }
+.toolLink > span > strong { font-size: 17px; font-weight: 700; display: block; line-height: 1.35; margin-bottom: 6px; }
+.toolLink > span > span { display: block; font-size: 14px; color: var(--muted); line-height: 1.6; max-width: 50ch; }
+.toolArrow { width: 32px; height: 32px; padding: 6px; border-radius: 6px; color: var(--accent); transition: transform 180ms ease, background-color 180ms ease; }
+.toolLink:hover .toolArrow { background: var(--accent); color: white; transform: translateX(3px); }
+@media (max-width: 1440px) { .tools { margin-inline: 50px; } }
+@media (max-width: 1100px) {
+  .desk { padding: 36px 32px 40px; gap: 32px; grid-template-columns: minmax(0,1.15fr) minmax(0,1fr); grid-template-rows: auto 260px; }
+  .intro h1 { font-size: 54px; }
+  .estimate { padding: 26px; }
+  .actions { align-items: stretch; flex-direction: column; }
+  .actions button { justify-content: space-between; }
+  .tools { margin-inline: 32px; column-gap: 40px; }
 }
 @media (max-width: 800px) {
-  .desk { grid-template-columns: minmax(0,1fr); grid-template-rows: auto auto 300px; }
-  .intro { grid-column: 1; grid-row: 1; padding: 34px 24px 32px; }
-  .intro h1 { font-size: clamp(43px, 7.8vw, 64px); margin-bottom: 21px; }
-  .intro > p { font-size: 17px; max-width: 45ch; }
-  .actions { margin-top: 24px; gap: 12px; }
-  .actions button { min-height: 50px; font-size: 16px; padding: 12px 20px; }
-  .estimate { grid-column: 1; grid-row: 2; padding: 32px 24px; border-top: 1px solid var(--border); }
-  .estimate::before { display: none; }
-  .formIntro h2 { font-size: 34px; white-space: normal; }
-  .formIntro p { max-width: 45ch; }
-  .fields { margin-top: 22px; }
-  .fields select, .fields input { height: 50px; }
-  .summary { margin-top: 25px; }
+  .desk { padding: 32px 24px 40px; grid-template-columns: minmax(0,1fr); grid-template-rows: auto auto 280px; gap: 28px; }
+  .intro { padding: 0; }
+  .intro h1 { font-size: clamp(44px, 7.8vw, 64px); margin-bottom: 20px; }
+  .intro > p { font-size: 16px; }
+  .actions { flex-direction: row; margin-top: 24px; }
+  .actions button { justify-content: center; }
+  .estimate { grid-column: 1; grid-row: 2; padding: 28px; }
   .photo { grid-column: 1; grid-row: 3; }
-  .tools { display: grid; grid-template-columns: minmax(0,1fr); gap: 0; padding: 30px 24px 22px; }
-  .toolsIntro { padding-bottom: 20px; }
-  .toolsIntro h2 { font-size: 34px; }
-  .toolLink { grid-template-columns: 30px minmax(0,1fr) 28px; gap: 18px; border-top: 1px solid var(--border); padding: 22px 0; }
-  .toolLink > svg:first-child { width: 30px; height: 30px; }
-  .toolLink + .toolLink::before { display: none; }
-  .toolArrow { display: block; }
-  .toolLink > span > span { font-size: 15px; }
+  .tools { grid-template-columns: minmax(0,1fr); gap: 0; margin-inline: 24px; padding: 28px 0; }
+  .toolsIntro { grid-column: 1; grid-row: auto; padding: 0 0 24px; }
+  .toolsIntro h2 { font-size: 32px; }
+  .toolLink { grid-column: 1; border-top: 1px solid var(--border); }
+  .total strong { font-size: 24px; }
 }
 @media (max-width: 420px) {
-  .intro h1 { font-size: 43px; }
-  .intro { padding-left: 20px; padding-right: 20px; }
+  .desk { padding-inline: 20px; }
+  .intro h1 { font-size: 44px; }
   .actions { flex-direction: column; align-items: stretch; }
-  .actions button { justify-content: center; }
-  .estimate { padding: 28px 20px; }
-  .tools { padding-left: 20px; padding-right: 20px; }
+  .estimate { padding: 24px 20px; }
+  .formIntro h2 { font-size: 28px; }
+  .tools { margin-inline: 20px; }
+  .total strong { font-size: 21px; }
 }
+@media (prefers-reduced-motion: reduce) { .toolArrow { transition: none; } }

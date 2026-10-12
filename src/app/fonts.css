@@ -1,28 +1,35 @@
 @font-face {
-  font-family: 'Libre Caslon Text';
+  font-family: 'Manrope';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/libre-caslon-text-latin-400-normal.woff2') format('woff2');
+  src: url('/fonts/manrope-latin-400-normal.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Libre Caslon Text';
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/manrope-latin-500-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/manrope-latin-600-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/fonts/libre-caslon-text-latin-700-normal.woff2') format('woff2');
+  src: url('/fonts/manrope-latin-700-normal.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Manrope';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 800;
   font-display: swap;
-  src: url('/fonts/lato-latin-400-normal.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('/fonts/lato-latin-700-normal.woff2') format('woff2');
+  src: url('/fonts/manrope-latin-800-normal.woff2') format('woff2');
 }

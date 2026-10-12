@@ -85,7 +85,7 @@ export default function BuildBudget({initialView='home'}:{initialView?:string}) 
     <a className="skip-link" href="#main-content">Skip to content</a>
     <header className="topbar">
       <div className="nav-container">
-        <button className="logo-button" onClick={() => go('home')} aria-label="Budget Build home"><Logo/></button>
+        <button className="logo-button" onClick={() => go('home')} aria-label="BuildBudget home"><Logo/></button>
         <nav className="public-nav" aria-label="Main navigation">
           {publicLinks.map(({ view: next, label }) => <button key={next} className={view === next ? 'active' : ''} aria-current={view === next ? 'page' : undefined} onClick={() => go(next)}>{label}</button>)}
         </nav>

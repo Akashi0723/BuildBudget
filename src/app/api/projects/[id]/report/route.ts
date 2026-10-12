@@ -10,7 +10,7 @@ const currency = (value: number) => `PHP ${value.toLocaleString('en-PH', { minim
 const printable = (value: string) => value.replace(/×/g, 'x').replace(/m²/g, 'sq m').replace(/±/g, '+/-').replace(/[–—]/g, '-');
 
 async function createReport(project: SavedProject): Promise<Buffer> {
-  const document = new PDFDocument({ size: 'A4', margin: 48, info: { Title: `${project.name} - Budget Build estimate`, Author: 'Budget Build' } });
+  const document = new PDFDocument({ size: 'A4', margin: 48, info: { Title: `${project.name} - BuildBudget estimate`, Author: 'BuildBudget' } });
   const chunks: Buffer[] = [];
   const result = new Promise<Buffer>((resolve, reject) => {
     document.on('data', (chunk: Buffer) => chunks.push(chunk));
@@ -18,12 +18,14 @@ async function createReport(project: SavedProject): Promise<Buffer> {
     document.on('error', reject);
   });
   const estimate = project.estimate;
-  const heading = (text: string) => document.moveDown(0.8).font('Helvetica-Bold').fontSize(13).fillColor('#101d32').text(text).moveDown(0.4);
-  const line = (text: string) => document.font('Helvetica').fontSize(10).fillColor('#26332a').text(printable(text), { lineGap: 3 });
-  document.font('Helvetica-Bold').fontSize(24).fillColor('#101d32').text('BUDGET BUILD');
-  document.font('Helvetica').fontSize(11).fillColor('#5f6c61').text('Preliminary residential planning estimate');
+  const heading = (text: string) => document.moveDown(0.8).font('Helvetica-Bold').fontSize(13).fillColor('#182b25').text(text).moveDown(0.4);
+  const line = (text: string) => document.font('Helvetica').fontSize(10).fillColor('#182b25').text(printable(text), { lineGap: 3 });
+  document.save().translate(48, 48).scale(0.14).path('M88 24H232V104H168V72H88Z M24 88H88V168H152V232H24Z M168 120H232V232H168Z').fill('#24634b').restore();
+  document.font('Helvetica-Bold').fontSize(24).fillColor('#24634b').text('BuildBudget', 92, 51);
+  document.x = 48;
+  document.font('Helvetica').fontSize(11).fillColor('#52645a').text('Preliminary residential planning estimate');
   document.moveDown(1);
-  document.font('Helvetica-Bold').fontSize(19).fillColor('#26332a').text(printable(project.name));
+  document.font('Helvetica-Bold').fontSize(19).fillColor('#182b25').text(printable(project.name));
   line(`Saved ${new Date(project.createdAt).toISOString().slice(0, 10)}  |  Project ${project.id}`);
   line(`Report generated (Asia/Manila): ${new Date().toLocaleString('en-PH', { timeZone: 'Asia/Manila', dateStyle: 'medium', timeStyle: 'long' })}`);
   heading('Project details');
@@ -33,7 +35,7 @@ async function createReport(project: SavedProject): Promise<Buffer> {
   line(`Adjusted inclusive rate: ${currency(estimate.rate)} / sq m | Location factor: ${estimate.locationFactor}`);
   if (estimate.input.budget !== null) line(`User target budget: ${currency(estimate.input.budget)}`);
   heading('Estimated project budget');
-  document.font('Helvetica-Bold').fontSize(26).fillColor('#176a4d').text(currency(estimate.total));
+  document.font('Helvetica-Bold').fontSize(26).fillColor('#24634b').text(currency(estimate.total));
   line(`Illustrative +/-15% scenario: ${currency(estimate.low)} to ${currency(estimate.high)}`);
   line(`Base: ${currency(estimate.base)} | Allowance: ${currency(Math.round(estimate.input.allowance * 100) / 100)}`);
   line(`Contingency: ${estimate.input.contingency}% = ${currency(estimate.contingencyAmount)}`);
