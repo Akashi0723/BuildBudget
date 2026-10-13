@@ -820,9 +820,6 @@ main:focus { outline: none; }
   .result-summary > div strong, .cost-line > strong { max-width: 100%; }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
-}
 
 /* Modular Block: structural spacing, forest actions, warm neutral surfaces. */
 h1, h2 { font-weight: 800; }
@@ -840,6 +837,3 @@ button:active:not(:disabled) { transform: translateY(1px); }
 input, select, .summary-value, .total-card h2 { font-variant-numeric: tabular-nums; }
 @media (max-width: 760px) { .brand-logo { width: 195px; } }
 @media (max-width: 380px) { .brand-logo { width: 170px; } .nav-actions { gap: 8px; } }
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
-}

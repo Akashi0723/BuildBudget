@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-12T00:00:00Z",
+  "generatedAt": "2026-10-13T00:00:00Z",
   "title": "Design System: BuildBudget",
   "extensions": {
     "colorMeta": {
@@ -256,19 +256,54 @@
     "shadows": [],
     "motion": [
       {
-        "name": "control-state",
-        "value": "background-color 160ms ease, color 160ms ease, border-color 160ms ease",
-        "purpose": "Implemented shared button state transitions; disabled by prefers-reduced-motion."
+        "name": "calm-ease",
+        "value": "cubic-bezier(.22,1,.36,1)",
+        "purpose": "Spatial easing for calm entrances and interaction feedback."
+      },
+      {
+        "name": "quick",
+        "value": "140ms",
+        "purpose": "Shared control feedback; reduced motion retains 120ms color changes."
+      },
+      {
+        "name": "standard",
+        "value": "240ms",
+        "purpose": "Menu/dialog entrances and standard transitions."
+      },
+      {
+        "name": "route",
+        "value": "280ms",
+        "purpose": "Animate the existing route node without remounting or delaying navigation."
+      },
+      {
+        "name": "wizard-step",
+        "value": "240ms",
+        "purpose": "Existing wizard card enters when its step changes."
+      },
+      {
+        "name": "viewport-reveal",
+        "value": "420ms / 520ms; 45ms stagger",
+        "purpose": "One-time text/panel entrances and image clipping; content is visible without observers."
+      },
+      {
+        "name": "data-update",
+        "value": "220ms / 240ms / 280ms",
+        "purpose": "Summary/comparison, calculator result, and planner-options feedback; numeric values update immediately."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "120ms fades/color; no spatial movement",
+        "purpose": "Live preference changes cancel custom motion; keyboard input skips/cancels custom spatial animations and decorative entrances."
       },
       {
         "name": "loading-spin",
         "value": "spin 900ms linear infinite",
-        "purpose": "Implemented loading indicator; disabled by prefers-reduced-motion."
+        "purpose": "Essential progress indicator remains available in reduced motion."
       },
       {
         "name": "tool-arrow",
         "value": "transform 180ms ease, background-color 180ms ease",
-        "purpose": "Home arrow moves 3px on hover; disabled with reduced motion."
+        "purpose": "Existing 3px home arrow movement; reduced motion retains color feedback only."
       }
     ],
     "breakpoints": [
@@ -329,7 +364,7 @@
       "refersTo": "button-primary",
       "description": "Main planning action; disabled, hover, and keyboard focus follow the shared button styles.",
       "html": "<button class=\"ds-primary\" type=\"button\">Start free estimate<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14m-7-7 7 7-7 7\"/></svg></button>",
-      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:12px 20px;border:1px solid transparent;border-radius:6px;background:var(--accent,#24634b);color:#fff;font-family:var(--body-font,Manrope,Arial,sans-serif);font-size:16px;font-weight:700;line-height:1.4;text-align:center;cursor:pointer;touch-action:manipulation;transition:background-color 160ms ease,color 160ms ease,border-color 160ms ease;}.ds-primary:hover:not(:disabled){background:var(--accent-hover,#1b4e3b)}.ds-primary:focus-visible{outline:3px solid var(--focus,#24634b);outline-offset:4px;}.ds-primary:disabled{opacity:.55;cursor:not-allowed}.ds-primary svg{flex-shrink:0}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:12px 20px;border:1px solid transparent;border-radius:6px;background:var(--accent,#24634b);color:#fff;font-family:var(--body-font,Manrope,Arial,sans-serif);font-size:16px;font-weight:700;line-height:1.4;text-align:center;cursor:pointer;touch-action:manipulation;transition:background-color 140ms ease,color 140ms ease,border-color 140ms ease;}.ds-primary:hover:not(:disabled){background:var(--accent-hover,#1b4e3b)}.ds-primary:focus-visible{outline:3px solid var(--focus,#24634b);outline-offset:4px;}.ds-primary:disabled{opacity:.55;cursor:not-allowed}.ds-primary svg{flex-shrink:0}@media(prefers-reduced-motion:reduce){.ds-primary{transition:color 120ms ease,background-color 120ms ease,border-color 120ms ease;transform:none}}"
     },
     {
       "name": "Secondary Button",
@@ -337,7 +372,7 @@
       "refersTo": "button-secondary",
       "description": "Outlined alternative action on the paper ground.",
       "html": "<button class=\"ds-secondary\" type=\"button\">Start with my budget</button>",
-      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:12px 20px;border:1px solid var(--control-border,#798b80);border-radius:6px;background:transparent;color:var(--ink,#182b25);font-family:var(--body-font,Manrope,Arial,sans-serif);font-size:16px;font-weight:700;line-height:1.4;text-align:center;cursor:pointer;touch-action:manipulation;transition:background-color 160ms ease,color 160ms ease,border-color 160ms ease;}.ds-secondary:hover:not(:disabled){background:#e9eee6;border-color:var(--muted,#52645a)}.ds-secondary:focus-visible{outline:3px solid var(--focus,#24634b);outline-offset:4px;}.ds-secondary:disabled{opacity:.55;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-secondary{transition:none}}"
+      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:12px 20px;border:1px solid var(--control-border,#798b80);border-radius:6px;background:transparent;color:var(--ink,#182b25);font-family:var(--body-font,Manrope,Arial,sans-serif);font-size:16px;font-weight:700;line-height:1.4;text-align:center;cursor:pointer;touch-action:manipulation;transition:background-color 140ms ease,color 140ms ease,border-color 140ms ease;}.ds-secondary:hover:not(:disabled){background:#e9eee6;border-color:var(--muted,#52645a)}.ds-secondary:focus-visible{outline:3px solid var(--focus,#24634b);outline-offset:4px;}.ds-secondary:disabled{opacity:.55;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-secondary{transition:color 120ms ease,background-color 120ms ease,border-color 120ms ease;transform:none}}"
     },
     {
       "name": "Text Button",
@@ -345,7 +380,7 @@
       "refersTo": "button-text",
       "description": "Quiet forest action used in supporting workspace flows.",
       "html": "<button class=\"ds-text\" type=\"button\">Edit assumptions<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14m-7-7 7 7-7 7\"/></svg></button>",
-      "css": ".ds-text{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:10px 0;border:0;background:transparent;color:var(--accent,#24634b);font-family:var(--body-font,Manrope,Arial,sans-serif);font-size:14px;font-weight:700;line-height:1.4;cursor:pointer;transition:background-color 160ms ease,color 160ms ease,border-color 160ms ease;}.ds-text:hover:not(:disabled){color:var(--accent-hover,#1b4e3b)}.ds-text:focus-visible{outline:3px solid var(--focus,#24634b);outline-offset:4px;}.ds-text:disabled{opacity:.55;cursor:not-allowed}.ds-text svg{flex-shrink:0}@media(prefers-reduced-motion:reduce){.ds-text{transition:none}}"
+      "css": ".ds-text{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:10px 0;border:0;background:transparent;color:var(--accent,#24634b);font-family:var(--body-font,Manrope,Arial,sans-serif);font-size:14px;font-weight:700;line-height:1.4;cursor:pointer;transition:background-color 160ms ease,color 160ms ease,border-color 160ms ease;}.ds-text:hover:not(:disabled){color:var(--accent-hover,#1b4e3b)}.ds-text:focus-visible{outline:3px solid var(--focus,#24634b);outline-offset:4px;}.ds-text:disabled{opacity:.55;cursor:not-allowed}.ds-text svg{flex-shrink:0}@media(prefers-reduced-motion:reduce){.ds-text{transition:color 120ms ease,background-color 120ms ease,border-color 120ms ease;transform:none}}"
     },
     {
       "name": "Labeled Field",
@@ -361,7 +396,7 @@
       "refersTo": "navigation-selected",
       "description": "Paper navigation with a soft forest selected item and quiet hover feedback.",
       "html": "<nav class=\"ds-navigation\" aria-label=\"Planning tools\"><button type=\"button\" aria-current=\"page\"><svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"4\" y=\"2\" width=\"16\" height=\"20\" rx=\"2\"/><path d=\"M8 6h8M8 10h2m4 0h2M8 14h2m4 0h2M8 18h2m4 0h2\"/></svg>Estimator</button><button type=\"button\">Budget planner</button><button type=\"button\">Material calculators</button></nav>",
-      "css": ".ds-navigation{width:224px;font-family:var(--body-font,Manrope,Arial,sans-serif)}.ds-navigation button{display:flex;align-items:center;gap:10px;width:100%;min-height:48px;margin-bottom:4px;padding:12px;border:0;border-radius:6px;background:transparent;color:var(--muted,#52645a);font-family:var(--body-font,Manrope,Arial,sans-serif);font-size:14px;font-weight:400;line-height:1.4;text-align:left;cursor:pointer;transition:background-color 160ms ease,color 160ms ease,border-color 160ms ease;}.ds-navigation button:hover{background:#e9eee6;color:var(--ink,#182b25)}.ds-navigation button[aria-current=\"page\"]{background:var(--accent-soft,#e4eee5);color:#24634b;font-weight:700}.ds-navigation button[aria-current=\"page\"] svg{color:var(--accent,#24634b)}.ds-navigation button:focus-visible{outline:3px solid var(--focus,#24634b);outline-offset:4px;}.ds-navigation svg{width:18px;height:18px;flex-shrink:0}@media(prefers-reduced-motion:reduce){.ds-navigation button{transition:none}}"
+      "css": ".ds-navigation{width:224px;font-family:var(--body-font,Manrope,Arial,sans-serif)}.ds-navigation button{display:flex;align-items:center;gap:10px;width:100%;min-height:48px;margin-bottom:4px;padding:12px;border:0;border-radius:6px;background:transparent;color:var(--muted,#52645a);font-family:var(--body-font,Manrope,Arial,sans-serif);font-size:14px;font-weight:400;line-height:1.4;text-align:left;cursor:pointer;transition:background-color 140ms ease,color 140ms ease,border-color 140ms ease;}.ds-navigation button:hover{background:#e9eee6;color:var(--ink,#182b25)}.ds-navigation button[aria-current=\"page\"]{background:var(--accent-soft,#e4eee5);color:#24634b;font-weight:700}.ds-navigation button[aria-current=\"page\"] svg{color:var(--accent,#24634b)}.ds-navigation button:focus-visible{outline:3px solid var(--focus,#24634b);outline-offset:4px;}.ds-navigation svg{width:18px;height:18px;flex-shrink:0}@media(prefers-reduced-motion:reduce){.ds-navigation button{transition:color 120ms ease,background-color 120ms ease,border-color 120ms ease;transform:none}}"
     },
     {
       "name": "Information Badge",
@@ -385,7 +420,7 @@
       "refersTo": "choice-card-selected",
       "description": "Implemented choice-card treatment: a warmed ground, forest edge, and visible radio indicator.",
       "html": "<button class=\"ds-choice\" type=\"button\" aria-pressed=\"true\"><span class=\"ds-choice-radio\" aria-hidden=\"true\"></span><strong>Build a new home</strong><small>Plan the construction budget for your home.</small></button>",
-      "css": ".ds-choice{position:relative;min-width:0;min-height:148px;width:100%;padding:20px 18px;border:1px solid var(--control-border,#798b80);border-radius:12px;background:var(--surface,#ffffff);color:var(--ink,#182b25);font-family:var(--body-font,Manrope,Arial,sans-serif);text-align:left;cursor:pointer;transition:background-color 160ms ease,color 160ms ease,border-color 160ms ease;}.ds-choice strong{display:block;margin-right:10px;color:var(--ink,#182b25);font-size:14px;font-weight:700;line-height:1.5}.ds-choice small{display:block;margin-top:4px;color:var(--muted,#52645a);font-size:14px;font-weight:400;line-height:1.6}.ds-choice:hover{border-color:var(--accent,#24634b)}.ds-choice[aria-pressed=\"true\"]{border-color:var(--accent,#24634b);background:#edf4ee}.ds-choice:focus-visible{outline:3px solid var(--focus,#24634b);outline-offset:4px;}.ds-choice-radio{position:absolute;top:18px;right:17px;width:16px;height:16px;border:1px solid var(--control-border,#798b80);border-radius:50%;background:var(--surface,#ffffff)}.ds-choice[aria-pressed=\"true\"] .ds-choice-radio{border-color:var(--accent,#24634b);background:var(--accent,#24634b)}.ds-choice[aria-pressed=\"true\"] .ds-choice-radio:after{content:\"\";position:absolute;top:4px;left:4px;width:6px;height:6px;border-radius:50%;background:#fff}@media(prefers-reduced-motion:reduce){.ds-choice{transition:none}}"
+      "css": ".ds-choice{position:relative;min-width:0;min-height:148px;width:100%;padding:20px 18px;border:1px solid var(--control-border,#798b80);border-radius:12px;background:var(--surface,#ffffff);color:var(--ink,#182b25);font-family:var(--body-font,Manrope,Arial,sans-serif);text-align:left;cursor:pointer;transition:background-color 140ms ease,color 140ms ease,border-color 140ms ease;}.ds-choice strong{display:block;margin-right:10px;color:var(--ink,#182b25);font-size:14px;font-weight:700;line-height:1.5}.ds-choice small{display:block;margin-top:4px;color:var(--muted,#52645a);font-size:14px;font-weight:400;line-height:1.6}.ds-choice:hover{border-color:var(--accent,#24634b)}.ds-choice[aria-pressed=\"true\"]{border-color:var(--accent,#24634b);background:#edf4ee}.ds-choice:focus-visible{outline:3px solid var(--focus,#24634b);outline-offset:4px;}.ds-choice-radio{position:absolute;top:18px;right:17px;width:16px;height:16px;border:1px solid var(--control-border,#798b80);border-radius:50%;background:var(--surface,#ffffff)}.ds-choice[aria-pressed=\"true\"] .ds-choice-radio{border-color:var(--accent,#24634b);background:var(--accent,#24634b)}.ds-choice[aria-pressed=\"true\"] .ds-choice-radio:after{content:\"\";position:absolute;top:4px;left:4px;width:6px;height:6px;border-radius:50%;background:#fff}@media(prefers-reduced-motion:reduce){.ds-choice{transition:color 120ms ease,background-color 120ms ease,border-color 120ms ease;transform:none}}"
     },
     {
       "name": "Explained Reference Budget",
@@ -399,7 +434,7 @@
       "kind": "custom",
       "description": "Home tool entry with a forest line icon, useful description, and rounded arrow that fills and moves on hover.",
       "html": "<button class=\"ds-tool\" type=\"button\"><svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"4\" y=\"2\" width=\"16\" height=\"20\" rx=\"2\"/><path d=\"M8 6h8M8 10h2m4 0h2M8 14h2m4 0h2M8 18h2m4 0h2\"/></svg><span><strong>Estimator</strong><span>Get a reference budget based on your location, size, and finish level.</span></span><svg class=\"ds-tool-arrow\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14m-7-7 7 7-7 7\"/></svg></button>",
-      "css": ".ds-tool{display:grid;grid-template-columns:32px minmax(0,1fr) 32px;gap:20px;align-items:center;min-width:0;padding:20px 0;border:0;background:transparent;color:var(--ink,#182b25);font-family:var(--body-font,Manrope,Arial,sans-serif);text-align:left;cursor:pointer;transition:background-color 160ms ease,color 160ms ease,border-color 160ms ease;}.ds-tool>svg:first-child{color:#24634b;flex-shrink:0}.ds-tool>span>strong{display:block;margin-bottom:6px;font-size:17px;font-weight:700;line-height:1.35}.ds-tool>span>span{display:block;color:var(--muted,#52645a);font-size:14px;line-height:1.6;max-width:50ch}.ds-tool-arrow{align-self:center;width:32px;height:32px;padding:6px;border:0;border-radius:6px;color:var(--accent,#24634b);transition:transform 180ms ease,background-color 180ms ease}.ds-tool:hover .ds-tool-arrow{background:var(--accent,#24634b);color:#fff;border-color:var(--accent,#24634b);transform:translateX(3px)}.ds-tool:focus-visible{outline:3px solid var(--focus,#24634b);outline-offset:4px;}@media(prefers-reduced-motion:reduce){.ds-tool{transition:none}}@media(prefers-reduced-motion:reduce){.ds-tool-arrow{transition:none}}"
+      "css": ".ds-tool{display:grid;grid-template-columns:32px minmax(0,1fr) 32px;gap:20px;align-items:center;min-width:0;padding:20px 0;border:0;background:transparent;color:var(--ink,#182b25);font-family:var(--body-font,Manrope,Arial,sans-serif);text-align:left;cursor:pointer;transition:background-color 160ms ease,color 160ms ease,border-color 160ms ease;}.ds-tool>svg:first-child{color:#24634b;flex-shrink:0}.ds-tool>span>strong{display:block;margin-bottom:6px;font-size:17px;font-weight:700;line-height:1.35}.ds-tool>span>span{display:block;color:var(--muted,#52645a);font-size:14px;line-height:1.6;max-width:50ch}.ds-tool-arrow{align-self:center;width:32px;height:32px;padding:6px;border:0;border-radius:6px;color:var(--accent,#24634b);transition:transform 180ms ease,background-color 180ms ease}.ds-tool:hover .ds-tool-arrow{background:var(--accent,#24634b);color:#fff;border-color:var(--accent,#24634b);transform:translateX(3px)}.ds-tool:focus-visible{outline:3px solid var(--focus,#24634b);outline-offset:4px;}@media(prefers-reduced-motion:reduce){.ds-tool{transition:color 120ms ease,background-color 120ms ease,border-color 120ms ease;transform:none}}@media(prefers-reduced-motion:reduce){.ds-tool-arrow{transition:color 120ms ease,background-color 120ms ease,border-color 120ms ease;transform:none}}"
     }
   ],
   "narrative": {

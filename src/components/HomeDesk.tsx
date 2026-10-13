@@ -1,11 +1,12 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import Image from 'next/image';
 import { ArrowRight, Boxes, Calculator, ClipboardList, Loader2 } from 'lucide-react';
 import { api, peso, provinces } from '@/lib/client';
 import type { Estimate, Finish, ProjectInput } from '@/lib/types';
 import styles from './HomeDesk.module.css';
+import { useMotionTransition, useScrollMotion } from './useMotion';
 
 type Props = {
   onStart: () => void;
@@ -14,6 +15,9 @@ type Props = {
 };
 
 export default function HomeDesk({ onStart, onUse, go }: Props) {
+  const homeRef = useRef<HTMLDivElement>(null);
+  const summaryRef = useRef<HTMLDivElement>(null);
+  useScrollMotion(homeRef);
   const [province, setProvince] = useState('Metro Manila');
   const [area, setArea] = useState('120');
   const [finish, setFinish] = useState<Finish>('standard');
@@ -53,25 +57,26 @@ export default function HomeDesk({ onStart, onUse, go }: Props) {
 
   const current = validArea && estimate?.input.province === province && estimate.input.finish === finish && estimate.input.floors[0] === Number(area);
   const ready = current && !loading && !error;
+  useMotionTransition(summaryRef, estimate, { enabled: !!ready, distance: 4, duration: 220 });
   const amount = (value?: number) => ready && value !== undefined ? peso(value) : '—';
 
-  return <>
+  return <div ref={homeRef}>
     <section className={styles.desk} aria-labelledby="desk-title">
       <div className={styles.intro}>
-        <h1 id="desk-title">Make room<br />for your plans.</h1>
-        <p>A simpler way to plan your home construction budget<br className={styles.desktopBreak} /> in the Philippines. Get a clear picture before you build.</p>
-        <div className={styles.actions}>
+        <h1 id="desk-title" data-motion="reveal">Make room<br />for your plans.</h1>
+        <p data-motion="reveal" data-motion-order="1">A simpler way to plan your home construction budget<br className={styles.desktopBreak} /> in the Philippines. Get a clear picture before you build.</p>
+        <div className={styles.actions} data-motion="reveal" data-motion-order="2">
           <button className="primary-btn" onClick={onStart}>Start free estimate <ArrowRight size={20} /></button>
           <button className="secondary-btn" onClick={() => go('planner')}>Start with my budget</button>
         </div>
       </div>
 
-      <div className={styles.photo}>
+      <div className={styles.photo} data-motion="image">
         <Image src="/project-desk-house.png" alt="Illustrative two-storey tropical home with timber details and lush planting" width={1848} height={852} sizes="(max-width: 800px) 100vw, (max-width: 1200px) 60vw, (max-width: 1536px) 63vw, 968px" loading="eager" fetchPriority="high" />
       <span className={styles.photoCaption}>A little inspiration for what comes next. <small>Illustrative home</small></span>
       </div>
 
-      <form className={styles.estimate} onSubmit={event => { event.preventDefault(); if (ready) onUse({ ...input, city: '' }); }}>
+      <form className={styles.estimate} data-motion="reveal" data-motion-order="2" onSubmit={event => { event.preventDefault(); if (ready) onUse({ ...input, city: '' }); }}>
         <div className={styles.formIntro}>
           <h2>First, the numbers.</h2>
           <p>Try a quick estimate to see a reference budget for your plans.</p>
@@ -94,7 +99,7 @@ export default function HomeDesk({ onStart, onUse, go }: Props) {
             </select>
           </label>
         </div>
-        <div className={styles.summary} aria-live="polite" aria-busy={loading}>
+        <div className={styles.summary} ref={summaryRef} aria-live="polite" aria-busy={loading}>
           <div><span>Construction</span><strong>{amount(estimate?.base)}</strong></div>
           <div><span>10% contingency</span><strong>{amount(estimate?.contingencyAmount)}</strong></div>
           <div className={styles.total}><span>Reference total</span><strong>{amount(estimate?.total)}</strong></div>
@@ -108,7 +113,7 @@ export default function HomeDesk({ onStart, onUse, go }: Props) {
     </section>
 
     <section className={styles.tools} aria-labelledby="planning-tools-title">
-      <div className={styles.toolsIntro}>
+      <div className={styles.toolsIntro} data-motion="reveal">
         <h2 id="planning-tools-title">A clearer next step.</h2>
         <p>Three practical tools to help you plan with confidence.</p>
       </div>
@@ -116,11 +121,11 @@ export default function HomeDesk({ onStart, onUse, go }: Props) {
         { Icon: Calculator, title: 'Estimator', text: 'Get a reference budget based on your location, size, and finish level.', view: 'new' },
         { Icon: ClipboardList, title: 'Budget planner', text: 'Explore how much floor area your available budget could cover.', view: 'planner' },
         { Icon: Boxes, title: 'Material calculators', text: 'Estimate quantities for concrete, blocks, tiles, paint, and roofing.', view: 'materials' },
-      ].map(({ Icon, title, text, view }) => <button key={view} className={styles.toolLink} onClick={() => go(view)}>
+      ].map(({ Icon, title, text, view }, index) => <button key={view} className={styles.toolLink} data-motion="reveal" data-motion-order={index} onClick={() => go(view)}>
         <Icon size={32} strokeWidth={1.5} />
         <span><strong>{title}</strong><span>{text}</span></span>
         <ArrowRight size={18} className={styles.toolArrow} />
       </button>)}
     </section>
-  </>;
+  </div>;
 }

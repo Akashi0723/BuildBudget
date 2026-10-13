@@ -196,7 +196,9 @@ Navigation collapses at (999px). Working grids stack at (760px), while fields an
 
 ## Elevation & Depth
 
-No box shadows are implemented. Warm Paper, White, forest state fills, and thin rules establish grouping. Focus uses a forest outline (3px) with offset (4px); grouped fields use offset (3px). Shared controls transition color and border (160ms, ease). Loading spins at (900ms, linear); home arrows move horizontally with (180ms, ease). Reduced-motion queries disable animation and transitions.
+No box shadows are implemented. Warm Paper, White, forest state fills, and thin rules establish grouping. Focus uses a forest outline (3px) with offset (4px); grouped fields use offset (3px). Motion uses calm easing `cubic-bezier(.22,1,.36,1)`, quick feedback (140ms), and standard transitions (240ms). Existing route nodes enter at (280ms), wizard steps at (240ms), and updated data panels at (220/240/280ms). Viewport entrances run once: text/panels (420ms), image clipping (520ms), and ordered stagger (45ms). Menus and dialogs use (240ms). Values update immediately; motion never remounts content or delays navigation.
+
+Reduced motion removes spatial movement, retaining brief fades/color feedback (120ms) and the essential loading spinner (900ms, linear). Preference changes cancel active custom animations live. Keyboard input skips or cancels spatial custom animations and decorative CSS entrances; focusing revealed content settles it immediately. Motion adds no dependencies, parallax, or looping decorative backgrounds. Implementation lives in `src/components/useMotion.ts` and `src/app/motion.css`.
 
 **The Flat Surface Rule.** Distinguish working groups with surfaces and borders while preserving the implemented shadow-free treatment.
 
@@ -232,7 +234,7 @@ The homepage pairs compact tabular construction and contingency rows with a Fore
 
 ### Planning tool links
 
-An asymmetric homepage list uses forest line icons, strong titles, descriptions, and a rounded arrow. Hover fills the arrow and moves it (3px) horizontally; reduced motion removes the transition. Preserve separators and readable stacked rows on phones.
+An asymmetric homepage list uses forest line icons, strong titles, descriptions, and a rounded arrow. Hover fills the arrow and moves it (3px) horizontally; reduced motion removes spatial movement while retaining brief color feedback. Preserve separators and readable stacked rows on phones.
 
 ## Do's and Don'ts
 

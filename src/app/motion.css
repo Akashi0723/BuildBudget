@@ -1,0 +1,83 @@
+/* Motion changes presentation only. Short feedback stays useful in reduced motion. */
+:root {
+  --motion-quick: 140ms;
+  --motion-standard: 240ms;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:is(.primary-btn, .secondary-btn, .icon-btn, .side-link, .choice-card, .finish-card, .material-tabs button, .auth-tabs button) {
+  transition: color var(--motion-quick) ease, background-color var(--motion-quick) ease,
+    border-color var(--motion-quick) ease, transform var(--motion-quick) var(--motion-ease);
+}
+.field :is(input, select, textarea), .choice-radio {
+  transition: border-color var(--motion-quick) ease, background-color var(--motion-quick) ease;
+}
+.public-nav button::after { transition: transform var(--motion-standard) var(--motion-ease); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .application[data-ready='true'] .brand-logo { animation: brand-arrive 420ms var(--motion-ease); }
+  :is(.primary-btn, .secondary-btn, .icon-btn):active:not(:disabled) { transform: scale(0.97); }
+  .side-link:hover { transform: translateX(3px); }
+  :is(.choice-card, .finish-card):hover:not(:disabled) { transform: translateY(-2px); }
+  .choice-card.chosen .choice-radio { animation: control-settle 220ms var(--motion-ease); }
+  .wizard-progress .current > span { animation: control-settle 280ms var(--motion-ease); }
+  .mobile-menu:not([hidden]) { transform-origin: top; animation: menu-open var(--motion-standard) var(--motion-ease); }
+  .mobile-menu:not([hidden]) > button { animation: item-arrive 280ms var(--motion-ease) backwards; }
+  .mobile-menu > button:nth-child(2) { animation-delay: 25ms; }
+  .mobile-menu > button:nth-child(3) { animation-delay: 50ms; }
+  .mobile-menu > button:nth-child(4) { animation-delay: 75ms; }
+  .modal-backdrop { animation: backdrop-arrive var(--motion-standard) var(--motion-ease); }
+  .modal { animation: dialog-arrive var(--motion-standard) var(--motion-ease); }
+  .toast { animation: toast-arrive 280ms var(--motion-ease); }
+  .toast > svg:first-child { animation: control-settle 280ms var(--motion-ease) 100ms backwards; }
+  .error-message { animation: feedback-arrive 200ms var(--motion-ease); }
+  .skeleton { animation: loading-breathe 1200ms ease-in-out 3; }
+}
+
+@keyframes brand-arrive {
+  from { opacity: .6; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes control-settle {
+  from { transform: scale(.85); }
+  to { transform: scale(1); }
+}
+@keyframes menu-open {
+  from { opacity: .6; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes item-arrive {
+  from { opacity: .5; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes backdrop-arrive { from { opacity: 0; } to { opacity: 1; } }
+@keyframes dialog-arrive {
+  from { opacity: .5; transform: translateY(12px) scale(.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes toast-arrive {
+  from { opacity: .5; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes feedback-arrive {
+  from { opacity: .65; transform: translateY(-3px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes loading-breathe { 0%, 100% { opacity: 1; } 50% { opacity: .45; } }
+
+/* Keyboard navigation and validation never wait for decorative motion. */
+html[data-motion-input='keyboard'] :is(.modal-backdrop, .modal, .toast, .error-message, .mobile-menu, .mobile-menu > button, .wizard-progress .current > span, .choice-radio) {
+  animation: none;
+}
+html[data-motion-input='keyboard'] button { transform: none !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  :is(button, .side-link, .choice-radio, .field input, .field select, .field textarea) {
+    transition: color 120ms ease, background-color 120ms ease, border-color 120ms ease;
+  }
+  :is(button, button svg:not(.spin), .brand-logo) { transform: none !important; }
+  .modal-backdrop, .modal, .toast, .error-message { animation: backdrop-arrive 120ms ease; }
+  .spin { animation: spin 900ms linear infinite; }
+  .skeleton { animation: none; }
+  html { scroll-behavior: auto; }
+}
